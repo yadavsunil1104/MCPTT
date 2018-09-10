@@ -1,0 +1,125 @@
+disabled_rules:
+  # Allow arbitrary complexity. Re-enable and address when possible.
+  - cyclomatic_complexity
+  # Let identifier (properties etc) names be as long as we want.
+  - identifier_name
+  # Allow longer generic type names.
+  - generic_type_name
+  # Allow tuples with more than two members. Consider re-examining this rule.
+  - large_tuple
+  # Allow declaring operators without extra whitespace, like so: `func ==(_ lhs, ...)`
+  - operator_whitespace
+  # Allow `TODO` and `FIXME` comments.
+  - todo
+  # Let type names be as long as we want.
+  - type_name
+  # Allow the use of `let _ = <optional>`
+  - unused_optional_binding
+  # Disbale swift fallthrough - 10/4/17
+  - fallthrough
+  # Allow the use of parantheses when calling methods with trailing completion closures
+  - empty_parentheses_with_trailing_closure
+  # Allow type nesting for Swift
+  - nesting
+  # Allow full form syntax
+  - syntactic_sugar
+  # Allow enum value to be equal to name
+  - redundant_string_enum_value
+
+  # TODO: fix add the following back in at some point with tickets
+  - weak_delegate
+  - notification_center_detachment
+  - class_delegate_protocol
+  - control_statement
+  - closure_parameter_position
+  - no_fallthrough_only
+  - for_where
+  - function_body_length
+  - switch_case_alignment
+  - multiple_closures_with_trailing_closure
+  - valid_ibinspectable
+  - vertical_parameter_alignment
+  - discouraged_direct_init
+  - unused_closure_parameter
+  # - line_length
+  # - file_length
+  # - function_parameter_count
+  # - type_body_length
+
+opt_in_rules:
+  # Prefer checking `isEmpty` over `count > 0`
+  - empty_count
+  - force_unwrapping
+  - closure_spacing
+  - redundant_nil_coalescing
+  - anyobject_protocol
+
+trailing_comma:
+  mandatory_comma: false
+  severity: error
+
+vertical_whitespace:
+  severity: error
+
+mark:
+  severity: error
+
+closure_spacing:
+  severity: error
+
+redundant_optional_initialization: error
+anyobject_protocol: error
+implicit_getter: error
+force_cast: error
+force_unwrapping: error
+force_try: error
+empty_count: error
+shorthand_operator: error
+unneeded_break_in_switch: error
+redundant_nil_coalescing: error
+superfluous_disable_command: error
+trailing_semicolon: error
+trailing_newline: error
+
+# NOTE:
+# To fix `trailing_whitespace` error,
+# go to Xcode Preferences -> Text Editing -> turn on both "Automatically trim trailing whitespace" and "Including whitespace-only lines".
+trailing_whitespace:
+  ignores_comments: true
+  ignores_empty_lines: true
+  severity: error
+
+# TODO: dial this in, there are 33 instances
+file_length:
+  warning: 1000
+  error: 1400
+
+# TODO: dial this in, there are 8 instances
+type_body_length:
+  warning: 800
+  error: 1200
+
+# TODO: dial this in, there are 29 instances
+function_parameter_count:
+  warning: 5
+  error: 7
+
+#TODO: dial this in, there are 35 instances
+line_length: 400
+
+custom_rules:
+  string_concatenation:
+    included: ".*\\.swift"
+    excluded: ".*Test\\.swift"
+    name: "String Concatenation"
+    regex:  " \\+ \"|\" \\+ |\\+= \""
+    message: "Please use string interpolation instead of concatenation"
+    severity: error
+
+  dynamic_member_lookup:
+    included: ".*\\.swift"
+    excluded: ".*Test\\.swift"
+    name: "Dynamic Member Lookup"
+    regex:  "@dynamicMemberLookup"
+    message: "Using @dynamicMemberLookup is banned in this codebase"
+    severity: error

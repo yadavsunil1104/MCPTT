@@ -7,21 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4D049217214654770071AB9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D049216214654770071AB9A /* AppDelegate.swift */; };
 		4D049219214654770071AB9A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D049218214654770071AB9A /* ViewController.swift */; };
 		4D04921C214654770071AB9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D04921A214654770071AB9A /* Main.storyboard */; };
 		4D04921E214654780071AB9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D04921D214654780071AB9A /* Assets.xcassets */; };
 		4D049221214654780071AB9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D04921F214654780071AB9A /* LaunchScreen.storyboard */; };
+		4D7CD4E42146748D0006EABC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7CD4E32146748C0006EABC /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4D049213214654770071AB9A /* MCPTT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MCPTT.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		4D049216214654770071AB9A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4D049218214654770071AB9A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4D04921B214654770071AB9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4D04921D214654780071AB9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D049220214654780071AB9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D049222214654790071AB9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D7CD4E32146748C0006EABC /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +54,7 @@
 		4D049215214654770071AB9A /* MCPTT */ = {
 			isa = PBXGroup;
 			children = (
-				4D049216214654770071AB9A /* AppDelegate.swift */,
+				4D7CD4E32146748C0006EABC /* AppDelegate.swift */,
 				4D049218214654770071AB9A /* ViewController.swift */,
 				4D04921A214654770071AB9A /* Main.storyboard */,
 				4D04921D214654780071AB9A /* Assets.xcassets */,
@@ -74,6 +74,7 @@
 				4D04920F214654770071AB9A /* Sources */,
 				4D049210214654770071AB9A /* Frameworks */,
 				4D049211214654770071AB9A /* Resources */,
+				4D049228214655170071AB9A /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -130,13 +131,29 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4D049228214655170071AB9A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4D04920F214654770071AB9A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D7CD4E42146748D0006EABC /* AppDelegate.swift in Sources */,
 				4D049219214654770071AB9A /* ViewController.swift in Sources */,
-				4D049217214654770071AB9A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
