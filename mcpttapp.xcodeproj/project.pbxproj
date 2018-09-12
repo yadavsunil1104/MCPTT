@@ -18,6 +18,8 @@
 		4D6DB13E21492A7D001BAD64 /* Channel.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D6DB13D21492A7D001BAD64 /* Channel.storyboard */; };
 		4D6DB14021492A96001BAD64 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6DB13F21492A96001BAD64 /* LoginViewModel.swift */; };
 		4D6DB14221492B83001BAD64 /* ChannelDetailViewContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6DB14121492B83001BAD64 /* ChannelDetailViewContoller.swift */; };
+		4D6DB15A21493396001BAD64 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6DB15921493396001BAD64 /* SettingViewController.swift */; };
+		4D6DB15C21493484001BAD64 /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D6DB15B21493484001BAD64 /* Setting.storyboard */; };
 		4D7CD4EC214679170006EABC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7CD4E8214679170006EABC /* AppDelegate.swift */; };
 		4D7CD4ED214679170006EABC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7CD4EA214679170006EABC /* ViewController.swift */; };
 		4D7CD4EE214679170006EABC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D7CD4EB214679170006EABC /* Main.storyboard */; };
@@ -39,6 +41,8 @@
 		4D6DB14121492B83001BAD64 /* ChannelDetailViewContoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelDetailViewContoller.swift; sourceTree = "<group>"; };
 		4D6DB14421492CBD001BAD64 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		4D6DB15321492F22001BAD64 /* mcpttapp-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "mcpttapp-Bridging-Header.h"; sourceTree = "<group>"; };
+		4D6DB15921493396001BAD64 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		4D6DB15B21493484001BAD64 /* Setting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
 		4D7CD4E8214679170006EABC /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4D7CD4EA214679170006EABC /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4D7CD4EB214679170006EABC /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -124,6 +128,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		4D6DB15421493353001BAD64 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				4D6DB15921493396001BAD64 /* SettingViewController.swift */,
+				4D6DB15B21493484001BAD64 /* Setting.storyboard */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
 		4D7CD4E5214679160006EABC /* Util */ = {
 			isa = PBXGroup;
 			children = (
@@ -150,6 +163,7 @@
 		4D7CD4E9214679170006EABC /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				4D6DB15421493353001BAD64 /* Setting */,
 				4D6DB13221492638001BAD64 /* Channel */,
 				4D6DB13021492638001BAD64 /* Contact */,
 				4D6DB13121492638001BAD64 /* Login */,
@@ -220,6 +234,7 @@
 			files = (
 				4D6DB13E21492A7D001BAD64 /* Channel.storyboard in Resources */,
 				4D6DB1362149266B001BAD64 /* Login.storyboard in Resources */,
+				4D6DB15C21493484001BAD64 /* Setting.storyboard in Resources */,
 				4D7CD4EE214679170006EABC /* Main.storyboard in Resources */,
 				4D049221214654780071AB9A /* LaunchScreen.storyboard in Resources */,
 				4D04921E214654780071AB9A /* Assets.xcassets in Resources */,
@@ -255,6 +270,7 @@
 				4D6DB13821492A46001BAD64 /* ContactListViewContoller.swift in Sources */,
 				4D6DB13421492655001BAD64 /* LoginViewContoller.swift in Sources */,
 				4D6DB13C21492A6D001BAD64 /* ChannelListViewContoller.swift in Sources */,
+				4D6DB15A21493396001BAD64 /* SettingViewController.swift in Sources */,
 				4D7CD4ED214679170006EABC /* ViewController.swift in Sources */,
 				4D7CD4EC214679170006EABC /* AppDelegate.swift in Sources */,
 				4D6DB14021492A96001BAD64 /* LoginViewModel.swift in Sources */,

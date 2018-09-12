@@ -1,5 +1,5 @@
 //
-//  LoginViewContoller.swift
+//  SettingViewController.swift
 //  mcpttapp
 //
 //  Created by Niranjan, Rajabhaiya on 12/09/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class LoginViewContoller: UIViewController {
+final class SettingViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()

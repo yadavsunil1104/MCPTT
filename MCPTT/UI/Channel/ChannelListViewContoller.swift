@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ChannelListViewContoller: UIViewController {
+final class ChannelListViewContoller: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
