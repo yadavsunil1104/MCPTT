@@ -9,16 +9,36 @@
 /* Begin PBXBuildFile section */
 		4D04921E214654780071AB9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D04921D214654780071AB9A /* Assets.xcassets */; };
 		4D049221214654780071AB9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D04921F214654780071AB9A /* LaunchScreen.storyboard */; };
+		4D6DB12F2149262D001BAD64 /* EncryptionUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6DB12E2149262D001BAD64 /* EncryptionUtils.swift */; };
+		4D6DB13421492655001BAD64 /* LoginViewContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6DB13321492655001BAD64 /* LoginViewContoller.swift */; };
+		4D6DB1362149266B001BAD64 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D6DB1352149266B001BAD64 /* Login.storyboard */; };
+		4D6DB13821492A46001BAD64 /* ContactListViewContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6DB13721492A46001BAD64 /* ContactListViewContoller.swift */; };
+		4D6DB13A21492A58001BAD64 /* Contact.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D6DB13921492A58001BAD64 /* Contact.storyboard */; };
+		4D6DB13C21492A6D001BAD64 /* ChannelListViewContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6DB13B21492A6D001BAD64 /* ChannelListViewContoller.swift */; };
+		4D6DB13E21492A7D001BAD64 /* Channel.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D6DB13D21492A7D001BAD64 /* Channel.storyboard */; };
+		4D6DB14021492A96001BAD64 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6DB13F21492A96001BAD64 /* LoginViewModel.swift */; };
+		4D6DB14221492B83001BAD64 /* ChannelDetailViewContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6DB14121492B83001BAD64 /* ChannelDetailViewContoller.swift */; };
 		4D7CD4EC214679170006EABC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7CD4E8214679170006EABC /* AppDelegate.swift */; };
 		4D7CD4ED214679170006EABC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7CD4EA214679170006EABC /* ViewController.swift */; };
 		4D7CD4EE214679170006EABC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D7CD4EB214679170006EABC /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4D049213214654770071AB9A /* mcptt_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mcptt_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D049213214654770071AB9A /* mcpttapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mcpttapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D04921D214654780071AB9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D049220214654780071AB9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D049222214654790071AB9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D6DB12E2149262D001BAD64 /* EncryptionUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncryptionUtils.swift; sourceTree = "<group>"; };
+		4D6DB13321492655001BAD64 /* LoginViewContoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewContoller.swift; sourceTree = "<group>"; };
+		4D6DB1352149266B001BAD64 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		4D6DB13721492A46001BAD64 /* ContactListViewContoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListViewContoller.swift; sourceTree = "<group>"; };
+		4D6DB13921492A58001BAD64 /* Contact.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Contact.storyboard; sourceTree = "<group>"; };
+		4D6DB13B21492A6D001BAD64 /* ChannelListViewContoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelListViewContoller.swift; sourceTree = "<group>"; };
+		4D6DB13D21492A7D001BAD64 /* Channel.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Channel.storyboard; sourceTree = "<group>"; };
+		4D6DB13F21492A96001BAD64 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		4D6DB14121492B83001BAD64 /* ChannelDetailViewContoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelDetailViewContoller.swift; sourceTree = "<group>"; };
+		4D6DB14421492CBD001BAD64 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		4D6DB15321492F22001BAD64 /* mcpttapp-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "mcpttapp-Bridging-Header.h"; sourceTree = "<group>"; };
 		4D7CD4E8214679170006EABC /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4D7CD4EA214679170006EABC /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4D7CD4EB214679170006EABC /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -40,13 +60,14 @@
 			children = (
 				4D049215214654770071AB9A /* MCPTT */,
 				4D049214214654770071AB9A /* Products */,
+				4D6DB14321492CBC001BAD64 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		4D049214214654770071AB9A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4D049213214654770071AB9A /* mcptt_app.app */,
+				4D049213214654770071AB9A /* mcpttapp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,14 +81,53 @@
 				4D7CD4E5214679160006EABC /* Util */,
 				4D04921D214654780071AB9A /* Assets.xcassets */,
 				4D04921F214654780071AB9A /* LaunchScreen.storyboard */,
+				4D6DB15321492F22001BAD64 /* mcpttapp-Bridging-Header.h */,
 				4D049222214654790071AB9A /* Info.plist */,
 			);
 			path = MCPTT;
 			sourceTree = "<group>";
 		};
+		4D6DB13021492638001BAD64 /* Contact */ = {
+			isa = PBXGroup;
+			children = (
+				4D6DB13721492A46001BAD64 /* ContactListViewContoller.swift */,
+				4D6DB13921492A58001BAD64 /* Contact.storyboard */,
+			);
+			path = Contact;
+			sourceTree = "<group>";
+		};
+		4D6DB13121492638001BAD64 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				4D6DB13321492655001BAD64 /* LoginViewContoller.swift */,
+				4D6DB1352149266B001BAD64 /* Login.storyboard */,
+				4D6DB13F21492A96001BAD64 /* LoginViewModel.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		4D6DB13221492638001BAD64 /* Channel */ = {
+			isa = PBXGroup;
+			children = (
+				4D6DB13B21492A6D001BAD64 /* ChannelListViewContoller.swift */,
+				4D6DB13D21492A7D001BAD64 /* Channel.storyboard */,
+				4D6DB14121492B83001BAD64 /* ChannelDetailViewContoller.swift */,
+			);
+			path = Channel;
+			sourceTree = "<group>";
+		};
+		4D6DB14321492CBC001BAD64 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4D6DB14421492CBD001BAD64 /* Security.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4D7CD4E5214679160006EABC /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				4D6DB12E2149262D001BAD64 /* EncryptionUtils.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -90,6 +150,9 @@
 		4D7CD4E9214679170006EABC /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				4D6DB13221492638001BAD64 /* Channel */,
+				4D6DB13021492638001BAD64 /* Contact */,
+				4D6DB13121492638001BAD64 /* Login */,
 				4D7CD4EA214679170006EABC /* ViewController.swift */,
 				4D7CD4EB214679170006EABC /* Main.storyboard */,
 			);
@@ -99,9 +162,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4D049212214654770071AB9A /* mcptt_app */ = {
+		4D049212214654770071AB9A /* mcpttapp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4D049225214654790071AB9A /* Build configuration list for PBXNativeTarget "mcptt_app" */;
+			buildConfigurationList = 4D049225214654790071AB9A /* Build configuration list for PBXNativeTarget "mcpttapp" */;
 			buildPhases = (
 				4D04920F214654770071AB9A /* Sources */,
 				4D049210214654770071AB9A /* Frameworks */,
@@ -112,9 +175,9 @@
 			);
 			dependencies = (
 			);
-			name = mcptt_app;
+			name = mcpttapp;
 			productName = MCPTT;
-			productReference = 4D049213214654770071AB9A /* mcptt_app.app */;
+			productReference = 4D049213214654770071AB9A /* mcpttapp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -132,7 +195,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 4D04920E214654770071AB9A /* Build configuration list for PBXProject "mcptt_app" */;
+			buildConfigurationList = 4D04920E214654770071AB9A /* Build configuration list for PBXProject "mcpttapp" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -145,7 +208,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4D049212214654770071AB9A /* mcptt_app */,
+				4D049212214654770071AB9A /* mcpttapp */,
 			);
 		};
 /* End PBXProject section */
@@ -155,9 +218,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D6DB13E21492A7D001BAD64 /* Channel.storyboard in Resources */,
+				4D6DB1362149266B001BAD64 /* Login.storyboard in Resources */,
 				4D7CD4EE214679170006EABC /* Main.storyboard in Resources */,
 				4D049221214654780071AB9A /* LaunchScreen.storyboard in Resources */,
 				4D04921E214654780071AB9A /* Assets.xcassets in Resources */,
+				4D6DB13A21492A58001BAD64 /* Contact.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,8 +250,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D6DB14221492B83001BAD64 /* ChannelDetailViewContoller.swift in Sources */,
+				4D6DB12F2149262D001BAD64 /* EncryptionUtils.swift in Sources */,
+				4D6DB13821492A46001BAD64 /* ContactListViewContoller.swift in Sources */,
+				4D6DB13421492655001BAD64 /* LoginViewContoller.swift in Sources */,
+				4D6DB13C21492A6D001BAD64 /* ChannelListViewContoller.swift in Sources */,
 				4D7CD4ED214679170006EABC /* ViewController.swift in Sources */,
 				4D7CD4EC214679170006EABC /* AppDelegate.swift in Sources */,
+				4D6DB14021492A96001BAD64 /* LoginViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,7 +428,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4D04920E214654770071AB9A /* Build configuration list for PBXProject "mcptt_app" */ = {
+		4D04920E214654770071AB9A /* Build configuration list for PBXProject "mcpttapp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4D049223214654790071AB9A /* Debug */,
@@ -365,7 +437,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4D049225214654790071AB9A /* Build configuration list for PBXNativeTarget "mcptt_app" */ = {
+		4D049225214654790071AB9A /* Build configuration list for PBXNativeTarget "mcpttapp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4D049226214654790071AB9A /* Debug */,
