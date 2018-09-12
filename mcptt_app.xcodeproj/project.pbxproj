@@ -15,7 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4D049213214654770071AB9A /* MCPTT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MCPTT.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D049213214654770071AB9A /* mcptt_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mcptt_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D04921D214654780071AB9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D049220214654780071AB9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D049222214654790071AB9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -46,7 +46,7 @@
 		4D049214214654770071AB9A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4D049213214654770071AB9A /* MCPTT.app */,
+				4D049213214654770071AB9A /* mcptt_app.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,9 +99,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4D049212214654770071AB9A /* MCPTT */ = {
+		4D049212214654770071AB9A /* mcptt_app */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4D049225214654790071AB9A /* Build configuration list for PBXNativeTarget "MCPTT" */;
+			buildConfigurationList = 4D049225214654790071AB9A /* Build configuration list for PBXNativeTarget "mcptt_app" */;
 			buildPhases = (
 				4D04920F214654770071AB9A /* Sources */,
 				4D049210214654770071AB9A /* Frameworks */,
@@ -112,9 +112,9 @@
 			);
 			dependencies = (
 			);
-			name = MCPTT;
+			name = mcptt_app;
 			productName = MCPTT;
-			productReference = 4D049213214654770071AB9A /* MCPTT.app */;
+			productReference = 4D049213214654770071AB9A /* mcptt_app.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -132,7 +132,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 4D04920E214654770071AB9A /* Build configuration list for PBXProject "MCPTT" */;
+			buildConfigurationList = 4D04920E214654770071AB9A /* Build configuration list for PBXProject "mcptt_app" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -145,7 +145,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4D049212214654770071AB9A /* MCPTT */,
+				4D049212214654770071AB9A /* mcptt_app */,
 			);
 		};
 /* End PBXProject section */
@@ -356,7 +356,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4D04920E214654770071AB9A /* Build configuration list for PBXProject "MCPTT" */ = {
+		4D04920E214654770071AB9A /* Build configuration list for PBXProject "mcptt_app" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4D049223214654790071AB9A /* Debug */,
@@ -365,7 +365,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4D049225214654790071AB9A /* Build configuration list for PBXNativeTarget "MCPTT" */ = {
+		4D049225214654790071AB9A /* Build configuration list for PBXNativeTarget "mcptt_app" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4D049226214654790071AB9A /* Debug */,
