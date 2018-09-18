@@ -107,6 +107,9 @@ function_parameter_count:
 #TODO: dial this in, there are 35 instances
 line_length: 400
 
+excluded: # paths to ignore during linting. Takes precedence over `included`.
+- Carthage
+
 custom_rules:
   string_concatenation:
     included: ".*\\.swift"

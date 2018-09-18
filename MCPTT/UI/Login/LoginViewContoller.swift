@@ -13,6 +13,7 @@ final class LoginViewContoller: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -20,4 +21,8 @@ final class LoginViewContoller: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+}
+
+private extension LoginViewContoller {
+
 }
