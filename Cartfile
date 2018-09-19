@@ -5,4 +5,4 @@ github "Alamofire/Alamofire" == 4.7
 # CocoaLumberjack
 github "CocoaLumberjack/CocoaLumberjack" ~> 3.4.2
 
-git "http://10.206.13.93/rniranjan/MCPTTiOSKit" == 0.0.1
+git "http://10.206.13.93/rniranjan/MCPTTFramework" == 0.0.2

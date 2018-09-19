@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MCPTTFramework
 
 final class LoginViewContoller: UIViewController {
     

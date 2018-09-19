@@ -23,8 +23,10 @@
 		4D7CD4EC214679170006EABC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7CD4E8214679170006EABC /* AppDelegate.swift */; };
 		4D7CD4ED214679170006EABC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7CD4EA214679170006EABC /* ViewController.swift */; };
 		4D7CD4EE214679170006EABC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D7CD4EB214679170006EABC /* Main.storyboard */; };
-		4DCF8C60214FA476003EDF43 /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DCF8C5E214FA476003EDF43 /* AlamofireImage.framework */; };
 		4DCF8C61214FA476003EDF43 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DCF8C5F214FA476003EDF43 /* Alamofire.framework */; };
+		4DCF8CFB2150EB46003EDF43 /* CocoaLumberjackSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DCF8CF82150EB46003EDF43 /* CocoaLumberjackSwift.framework */; };
+		4DCF8CFC2150EB46003EDF43 /* CocoaLumberjack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DCF8CF92150EB46003EDF43 /* CocoaLumberjack.framework */; };
+		4DCF8CFD2150EB46003EDF43 /* MCPTTFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DCF8CFA2150EB46003EDF43 /* MCPTTFramework.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,8 +50,10 @@
 		4D7CD4E8214679170006EABC /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4D7CD4EA214679170006EABC /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4D7CD4EB214679170006EABC /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		4DCF8C5E214FA476003EDF43 /* AlamofireImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireImage.framework; path = Carthage/Build/iOS/AlamofireImage.framework; sourceTree = "<group>"; };
 		4DCF8C5F214FA476003EDF43 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		4DCF8CF82150EB46003EDF43 /* CocoaLumberjackSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaLumberjackSwift.framework; path = Carthage/Build/iOS/CocoaLumberjackSwift.framework; sourceTree = "<group>"; };
+		4DCF8CF92150EB46003EDF43 /* CocoaLumberjack.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaLumberjack.framework; path = Carthage/Build/iOS/CocoaLumberjack.framework; sourceTree = "<group>"; };
+		4DCF8CFA2150EB46003EDF43 /* MCPTTFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MCPTTFramework.framework; path = Carthage/Build/iOS/MCPTTFramework.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +61,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4DCF8C60214FA476003EDF43 /* AlamofireImage.framework in Frameworks */,
+				4DCF8CFB2150EB46003EDF43 /* CocoaLumberjackSwift.framework in Frameworks */,
+				4DCF8CFC2150EB46003EDF43 /* CocoaLumberjack.framework in Frameworks */,
+				4DCF8CFD2150EB46003EDF43 /* MCPTTFramework.framework in Frameworks */,
 				4DCF8C61214FA476003EDF43 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -129,8 +135,10 @@
 		4D6DB14321492CBC001BAD64 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4DCF8CF92150EB46003EDF43 /* CocoaLumberjack.framework */,
+				4DCF8CF82150EB46003EDF43 /* CocoaLumberjackSwift.framework */,
+				4DCF8CFA2150EB46003EDF43 /* MCPTTFramework.framework */,
 				4DCF8C5F214FA476003EDF43 /* Alamofire.framework */,
-				4DCF8C5E214FA476003EDF43 /* AlamofireImage.framework */,
 				4D6DB14421492CBD001BAD64 /* Security.framework */,
 			);
 			name = Frameworks;
@@ -275,7 +283,7 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/AlamofireImage.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/MCPTTFramework.framework",
 			);
 			name = "Run Script";
 			outputPaths = (
