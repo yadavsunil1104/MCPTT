@@ -21,12 +21,24 @@
 		4D6DB15A21493396001BAD64 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6DB15921493396001BAD64 /* SettingViewController.swift */; };
 		4D6DB15C21493484001BAD64 /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D6DB15B21493484001BAD64 /* Setting.storyboard */; };
 		4D7CD4EC214679170006EABC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7CD4E8214679170006EABC /* AppDelegate.swift */; };
-		4D7CD4ED214679170006EABC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7CD4EA214679170006EABC /* ViewController.swift */; };
-		4D7CD4EE214679170006EABC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D7CD4EB214679170006EABC /* Main.storyboard */; };
+		4D98E8602153C27D00E11EF4 /* AddContactViewContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D98E85F2153C27D00E11EF4 /* AddContactViewContoller.swift */; };
+		4D98E86A2153C5C300E11EF4 /* TermAndConditionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D98E8672153C5C300E11EF4 /* TermAndConditionViewController.swift */; };
+		4D98E86B2153C5C300E11EF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D98E8682153C5C300E11EF4 /* Main.storyboard */; };
+		4D98E86C2153C5C300E11EF4 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D98E8692153C5C300E11EF4 /* HomeScreenViewController.swift */; };
+		4D98E8712153C7A400E11EF4 /* GroupsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D98E8702153C7A300E11EF4 /* GroupsListViewController.swift */; };
+		4D98E8732153C7F100E11EF4 /* GroupMembersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D98E8722153C7F100E11EF4 /* GroupMembersViewController.swift */; };
+		4D98E8752153C88F00E11EF4 /* Group.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D98E8742153C88F00E11EF4 /* Group.storyboard */; };
+		4D98E8772153C99900E11EF4 /* ContactDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D98E8762153C99900E11EF4 /* ContactDetailViewController.swift */; };
+		4D98E87A2153CB4600E11EF4 /* NotificationPanelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D98E8792153CB4600E11EF4 /* NotificationPanelViewController.swift */; };
+		4D98E87C2153CB6C00E11EF4 /* NotificationPanel.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D98E87B2153CB6C00E11EF4 /* NotificationPanel.storyboard */; };
+		4D98E8822153CE1300E11EF4 /* AES256Cipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D98E8812153CE1300E11EF4 /* AES256Cipher.swift */; };
+		4D98E8852153CE4100E11EF4 /* AESCipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D98E8832153CE4100E11EF4 /* AESCipher.swift */; };
+		4D98E8862153CE4100E11EF4 /* ICipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D98E8842153CE4100E11EF4 /* ICipher.swift */; };
+		4D98E88A2153CEF100E11EF4 /* ModelConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D98E8872153CEF100E11EF4 /* ModelConstants.swift */; };
+		4D98E88B2153CEF100E11EF4 /* IPValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D98E8882153CEF100E11EF4 /* IPValidator.swift */; };
+		4D98E88C2153CEF100E11EF4 /* RSAEncryptDecrypt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D98E8892153CEF100E11EF4 /* RSAEncryptDecrypt.swift */; };
+		4D98E88E2153CF4800E11EF4 /* ContactDatabaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D98E88D2153CF4800E11EF4 /* ContactDatabaseHelper.swift */; };
 		4DCF8C61214FA476003EDF43 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DCF8C5F214FA476003EDF43 /* Alamofire.framework */; };
-		4DCF8CFB2150EB46003EDF43 /* CocoaLumberjackSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DCF8CF82150EB46003EDF43 /* CocoaLumberjackSwift.framework */; };
-		4DCF8CFC2150EB46003EDF43 /* CocoaLumberjack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DCF8CF92150EB46003EDF43 /* CocoaLumberjack.framework */; };
-		4DCF8CFD2150EB46003EDF43 /* MCPTTFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DCF8CFA2150EB46003EDF43 /* MCPTTFramework.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,12 +60,24 @@
 		4D6DB15921493396001BAD64 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		4D6DB15B21493484001BAD64 /* Setting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
 		4D7CD4E8214679170006EABC /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4D7CD4EA214679170006EABC /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4D7CD4EB214679170006EABC /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		4D98E85F2153C27D00E11EF4 /* AddContactViewContoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactViewContoller.swift; sourceTree = "<group>"; };
+		4D98E8672153C5C300E11EF4 /* TermAndConditionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TermAndConditionViewController.swift; sourceTree = "<group>"; };
+		4D98E8682153C5C300E11EF4 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		4D98E8692153C5C300E11EF4 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
+		4D98E8702153C7A300E11EF4 /* GroupsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupsListViewController.swift; sourceTree = "<group>"; };
+		4D98E8722153C7F100E11EF4 /* GroupMembersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupMembersViewController.swift; sourceTree = "<group>"; };
+		4D98E8742153C88F00E11EF4 /* Group.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Group.storyboard; sourceTree = "<group>"; };
+		4D98E8762153C99900E11EF4 /* ContactDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailViewController.swift; sourceTree = "<group>"; };
+		4D98E8792153CB4600E11EF4 /* NotificationPanelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationPanelViewController.swift; sourceTree = "<group>"; };
+		4D98E87B2153CB6C00E11EF4 /* NotificationPanel.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NotificationPanel.storyboard; sourceTree = "<group>"; };
+		4D98E8812153CE1300E11EF4 /* AES256Cipher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AES256Cipher.swift; sourceTree = "<group>"; };
+		4D98E8832153CE4100E11EF4 /* AESCipher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AESCipher.swift; sourceTree = "<group>"; };
+		4D98E8842153CE4100E11EF4 /* ICipher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICipher.swift; sourceTree = "<group>"; };
+		4D98E8872153CEF100E11EF4 /* ModelConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelConstants.swift; sourceTree = "<group>"; };
+		4D98E8882153CEF100E11EF4 /* IPValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IPValidator.swift; sourceTree = "<group>"; };
+		4D98E8892153CEF100E11EF4 /* RSAEncryptDecrypt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSAEncryptDecrypt.swift; sourceTree = "<group>"; };
+		4D98E88D2153CF4800E11EF4 /* ContactDatabaseHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactDatabaseHelper.swift; sourceTree = "<group>"; };
 		4DCF8C5F214FA476003EDF43 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
-		4DCF8CF82150EB46003EDF43 /* CocoaLumberjackSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaLumberjackSwift.framework; path = Carthage/Build/iOS/CocoaLumberjackSwift.framework; sourceTree = "<group>"; };
-		4DCF8CF92150EB46003EDF43 /* CocoaLumberjack.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaLumberjack.framework; path = Carthage/Build/iOS/CocoaLumberjack.framework; sourceTree = "<group>"; };
-		4DCF8CFA2150EB46003EDF43 /* MCPTTFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MCPTTFramework.framework; path = Carthage/Build/iOS/MCPTTFramework.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,9 +85,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4DCF8CFB2150EB46003EDF43 /* CocoaLumberjackSwift.framework in Frameworks */,
-				4DCF8CFC2150EB46003EDF43 /* CocoaLumberjack.framework in Frameworks */,
-				4DCF8CFD2150EB46003EDF43 /* MCPTTFramework.framework in Frameworks */,
 				4DCF8C61214FA476003EDF43 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -91,6 +112,7 @@
 		4D049215214654770071AB9A /* MCPTT */ = {
 			isa = PBXGroup;
 			children = (
+				4D98E87D2153CD8300E11EF4 /* Model */,
 				4D7CD4E7214679170006EABC /* Application */,
 				4D7CD4E6214679160006EABC /* Extensions */,
 				4D7CD4E9214679170006EABC /* UI */,
@@ -108,6 +130,8 @@
 			children = (
 				4D6DB13721492A46001BAD64 /* ContactListViewContoller.swift */,
 				4D6DB13921492A58001BAD64 /* Contact.storyboard */,
+				4D98E85F2153C27D00E11EF4 /* AddContactViewContoller.swift */,
+				4D98E8762153C99900E11EF4 /* ContactDetailViewController.swift */,
 			);
 			path = Contact;
 			sourceTree = "<group>";
@@ -135,9 +159,6 @@
 		4D6DB14321492CBC001BAD64 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4DCF8CF92150EB46003EDF43 /* CocoaLumberjack.framework */,
-				4DCF8CF82150EB46003EDF43 /* CocoaLumberjackSwift.framework */,
-				4DCF8CFA2150EB46003EDF43 /* MCPTTFramework.framework */,
 				4DCF8C5F214FA476003EDF43 /* Alamofire.framework */,
 				4D6DB14421492CBD001BAD64 /* Security.framework */,
 			);
@@ -179,14 +200,82 @@
 		4D7CD4E9214679170006EABC /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				4D98E8782153CB1900E11EF4 /* NotificationPanel */,
+				4D98E86F2153C7A300E11EF4 /* Groups */,
+				4D98E8662153C5C300E11EF4 /* InitialScreens */,
 				4D6DB15421493353001BAD64 /* Setting */,
 				4D6DB13221492638001BAD64 /* Channel */,
 				4D6DB13021492638001BAD64 /* Contact */,
 				4D6DB13121492638001BAD64 /* Login */,
-				4D7CD4EA214679170006EABC /* ViewController.swift */,
-				4D7CD4EB214679170006EABC /* Main.storyboard */,
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		4D98E8662153C5C300E11EF4 /* InitialScreens */ = {
+			isa = PBXGroup;
+			children = (
+				4D98E8672153C5C300E11EF4 /* TermAndConditionViewController.swift */,
+				4D98E8682153C5C300E11EF4 /* Main.storyboard */,
+				4D98E8692153C5C300E11EF4 /* HomeScreenViewController.swift */,
+			);
+			path = InitialScreens;
+			sourceTree = "<group>";
+		};
+		4D98E86F2153C7A300E11EF4 /* Groups */ = {
+			isa = PBXGroup;
+			children = (
+				4D98E8702153C7A300E11EF4 /* GroupsListViewController.swift */,
+				4D98E8722153C7F100E11EF4 /* GroupMembersViewController.swift */,
+				4D98E8742153C88F00E11EF4 /* Group.storyboard */,
+			);
+			path = Groups;
+			sourceTree = "<group>";
+		};
+		4D98E8782153CB1900E11EF4 /* NotificationPanel */ = {
+			isa = PBXGroup;
+			children = (
+				4D98E8792153CB4600E11EF4 /* NotificationPanelViewController.swift */,
+				4D98E87B2153CB6C00E11EF4 /* NotificationPanel.storyboard */,
+			);
+			path = NotificationPanel;
+			sourceTree = "<group>";
+		};
+		4D98E87D2153CD8300E11EF4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4D98E87E2153CD8300E11EF4 /* Database */,
+				4D98E87F2153CD8300E11EF4 /* Cipher */,
+				4D98E8802153CD8300E11EF4 /* Common */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4D98E87E2153CD8300E11EF4 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				4D98E88D2153CF4800E11EF4 /* ContactDatabaseHelper.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		4D98E87F2153CD8300E11EF4 /* Cipher */ = {
+			isa = PBXGroup;
+			children = (
+				4D98E8832153CE4100E11EF4 /* AESCipher.swift */,
+				4D98E8842153CE4100E11EF4 /* ICipher.swift */,
+				4D98E8812153CE1300E11EF4 /* AES256Cipher.swift */,
+			);
+			path = Cipher;
+			sourceTree = "<group>";
+		};
+		4D98E8802153CD8300E11EF4 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				4D98E8882153CEF100E11EF4 /* IPValidator.swift */,
+				4D98E8872153CEF100E11EF4 /* ModelConstants.swift */,
+				4D98E8892153CEF100E11EF4 /* RSAEncryptDecrypt.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,10 +338,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D98E86B2153C5C300E11EF4 /* Main.storyboard in Resources */,
 				4D6DB13E21492A7D001BAD64 /* Channel.storyboard in Resources */,
 				4D6DB1362149266B001BAD64 /* Login.storyboard in Resources */,
+				4D98E87C2153CB6C00E11EF4 /* NotificationPanel.storyboard in Resources */,
 				4D6DB15C21493484001BAD64 /* Setting.storyboard in Resources */,
-				4D7CD4EE214679170006EABC /* Main.storyboard in Resources */,
+				4D98E8752153C88F00E11EF4 /* Group.storyboard in Resources */,
 				4D049221214654780071AB9A /* LaunchScreen.storyboard in Resources */,
 				4D04921E214654780071AB9A /* Assets.xcassets in Resources */,
 				4D6DB13A21492A58001BAD64 /* Contact.storyboard in Resources */,
@@ -283,7 +374,6 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/MCPTTFramework.framework",
 			);
 			name = "Run Script";
 			outputPaths = (
@@ -299,14 +389,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D98E8712153C7A400E11EF4 /* GroupsListViewController.swift in Sources */,
+				4D98E88E2153CF4800E11EF4 /* ContactDatabaseHelper.swift in Sources */,
+				4D98E8602153C27D00E11EF4 /* AddContactViewContoller.swift in Sources */,
+				4D98E8862153CE4100E11EF4 /* ICipher.swift in Sources */,
+				4D98E88B2153CEF100E11EF4 /* IPValidator.swift in Sources */,
 				4D6DB14221492B83001BAD64 /* ChannelDetailViewContoller.swift in Sources */,
+				4D98E87A2153CB4600E11EF4 /* NotificationPanelViewController.swift in Sources */,
 				4D6DB12F2149262D001BAD64 /* EncryptionUtils.swift in Sources */,
 				4D6DB13821492A46001BAD64 /* ContactListViewContoller.swift in Sources */,
+				4D98E8852153CE4100E11EF4 /* AESCipher.swift in Sources */,
 				4D6DB13421492655001BAD64 /* LoginViewContoller.swift in Sources */,
+				4D98E88A2153CEF100E11EF4 /* ModelConstants.swift in Sources */,
+				4D98E86C2153C5C300E11EF4 /* HomeScreenViewController.swift in Sources */,
 				4D6DB13C21492A6D001BAD64 /* ChannelListViewContoller.swift in Sources */,
+				4D98E8732153C7F100E11EF4 /* GroupMembersViewController.swift in Sources */,
+				4D98E88C2153CEF100E11EF4 /* RSAEncryptDecrypt.swift in Sources */,
+				4D98E86A2153C5C300E11EF4 /* TermAndConditionViewController.swift in Sources */,
+				4D98E8772153C99900E11EF4 /* ContactDetailViewController.swift in Sources */,
 				4D6DB15A21493396001BAD64 /* SettingViewController.swift in Sources */,
-				4D7CD4ED214679170006EABC /* ViewController.swift in Sources */,
 				4D7CD4EC214679170006EABC /* AppDelegate.swift in Sources */,
+				4D98E8822153CE1300E11EF4 /* AES256Cipher.swift in Sources */,
 				4D6DB14021492A96001BAD64 /* LoginViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
