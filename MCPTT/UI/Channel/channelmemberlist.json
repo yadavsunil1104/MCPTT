@@ -1,0 +1,20 @@
+
+{
+    "members": [
+              {
+            "name": "Anderw Adams",
+            "email": "andrew.adams@gmail.com",
+            "availablity": "onlne",
+              },
+              {
+                  "name": "Anderw Adams",
+                  "email": "andrew.adams@gmail.com",
+                  "availablity": "offline",
+              },
+              {
+                  "name": "Anderw Adams",
+                  "email": "andrew.adams@gmail.com",
+                  "availablity": "dnd",
+              }
+               ]
+}

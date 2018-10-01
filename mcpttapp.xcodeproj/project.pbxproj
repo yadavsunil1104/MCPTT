@@ -18,7 +18,6 @@
 		4D6DB13E21492A7D001BAD64 /* Channel.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D6DB13D21492A7D001BAD64 /* Channel.storyboard */; };
 		4D6DB14021492A96001BAD64 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6DB13F21492A96001BAD64 /* LoginViewModel.swift */; };
 		4D6DB14221492B83001BAD64 /* ChannelDetailViewContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6DB14121492B83001BAD64 /* ChannelDetailViewContoller.swift */; };
-		4D6DB15A21493396001BAD64 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6DB15921493396001BAD64 /* SettingViewController.swift */; };
 		4D6DB15C21493484001BAD64 /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D6DB15B21493484001BAD64 /* Setting.storyboard */; };
 		4D7CD4EC214679170006EABC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7CD4E8214679170006EABC /* AppDelegate.swift */; };
 		4D98E8602153C27D00E11EF4 /* AddContactViewContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D98E85F2153C27D00E11EF4 /* AddContactViewContoller.swift */; };
@@ -38,6 +37,12 @@
 		4D98E88B2153CEF100E11EF4 /* IPValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D98E8882153CEF100E11EF4 /* IPValidator.swift */; };
 		4D98E88C2153CEF100E11EF4 /* RSAEncryptDecrypt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D98E8892153CEF100E11EF4 /* RSAEncryptDecrypt.swift */; };
 		4D98E88E2153CF4800E11EF4 /* ContactDatabaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D98E88D2153CF4800E11EF4 /* ContactDatabaseHelper.swift */; };
+		56A9B4DD2161FE4500D9F79F /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A9B4DC2161FE4500D9F79F /* SettingsViewController.swift */; };
+		56A9B4DF2161FF3A00D9F79F /* ChannelMemberListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A9B4DE2161FF3A00D9F79F /* ChannelMemberListViewController.swift */; };
+		56A9B4E12162042200D9F79F /* MemberDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A9B4E02162042200D9F79F /* MemberDetailViewController.swift */; };
+		56A9B4E321620EED00D9F79F /* ChannelMemberListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A9B4E221620EED00D9F79F /* ChannelMemberListViewModel.swift */; };
+		56A9B4F02162141700D9F79F /* ChannelMemberListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A9B4EF2162141700D9F79F /* ChannelMemberListTableViewCell.swift */; };
+		56A9B4F52162521100D9F79F /* channelmemberlist.json in Resources */ = {isa = PBXBuildFile; fileRef = 56A9B4F42162521100D9F79F /* channelmemberlist.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,7 +61,6 @@
 		4D6DB14121492B83001BAD64 /* ChannelDetailViewContoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelDetailViewContoller.swift; sourceTree = "<group>"; };
 		4D6DB14421492CBD001BAD64 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		4D6DB15321492F22001BAD64 /* mcpttapp-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "mcpttapp-Bridging-Header.h"; sourceTree = "<group>"; };
-		4D6DB15921493396001BAD64 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		4D6DB15B21493484001BAD64 /* Setting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
 		4D7CD4E8214679170006EABC /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4D98E85F2153C27D00E11EF4 /* AddContactViewContoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactViewContoller.swift; sourceTree = "<group>"; };
@@ -76,6 +80,12 @@
 		4D98E8882153CEF100E11EF4 /* IPValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IPValidator.swift; sourceTree = "<group>"; };
 		4D98E8892153CEF100E11EF4 /* RSAEncryptDecrypt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSAEncryptDecrypt.swift; sourceTree = "<group>"; };
 		4D98E88D2153CF4800E11EF4 /* ContactDatabaseHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactDatabaseHelper.swift; sourceTree = "<group>"; };
+		56A9B4DC2161FE4500D9F79F /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		56A9B4DE2161FF3A00D9F79F /* ChannelMemberListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelMemberListViewController.swift; sourceTree = "<group>"; };
+		56A9B4E02162042200D9F79F /* MemberDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberDetailViewController.swift; sourceTree = "<group>"; };
+		56A9B4E221620EED00D9F79F /* ChannelMemberListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelMemberListViewModel.swift; sourceTree = "<group>"; };
+		56A9B4EF2162141700D9F79F /* ChannelMemberListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelMemberListTableViewCell.swift; sourceTree = "<group>"; };
+		56A9B4F42162521100D9F79F /* channelmemberlist.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = channelmemberlist.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +139,7 @@
 				4D6DB13921492A58001BAD64 /* Contact.storyboard */,
 				4D98E85F2153C27D00E11EF4 /* AddContactViewContoller.swift */,
 				4D98E8762153C99900E11EF4 /* ContactDetailViewController.swift */,
+				56A9B4E02162042200D9F79F /* MemberDetailViewController.swift */,
 			);
 			path = Contact;
 			sourceTree = "<group>";
@@ -146,9 +157,13 @@
 		4D6DB13221492638001BAD64 /* Channel */ = {
 			isa = PBXGroup;
 			children = (
-				4D6DB13B21492A6D001BAD64 /* ChannelListViewContoller.swift */,
 				4D6DB13D21492A7D001BAD64 /* Channel.storyboard */,
+				4D6DB13B21492A6D001BAD64 /* ChannelListViewContoller.swift */,
 				4D6DB14121492B83001BAD64 /* ChannelDetailViewContoller.swift */,
+				56A9B4DE2161FF3A00D9F79F /* ChannelMemberListViewController.swift */,
+				56A9B4E221620EED00D9F79F /* ChannelMemberListViewModel.swift */,
+				56A9B4EF2162141700D9F79F /* ChannelMemberListTableViewCell.swift */,
+				56A9B4F42162521100D9F79F /* channelmemberlist.json */,
 			);
 			path = Channel;
 			sourceTree = "<group>";
@@ -164,8 +179,8 @@
 		4D6DB15421493353001BAD64 /* Setting */ = {
 			isa = PBXGroup;
 			children = (
-				4D6DB15921493396001BAD64 /* SettingViewController.swift */,
 				4D6DB15B21493484001BAD64 /* Setting.storyboard */,
+				56A9B4DC2161FE4500D9F79F /* SettingsViewController.swift */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -341,6 +356,7 @@
 				4D6DB15C21493484001BAD64 /* Setting.storyboard in Resources */,
 				4D98E8752153C88F00E11EF4 /* Group.storyboard in Resources */,
 				4D049221214654780071AB9A /* LaunchScreen.storyboard in Resources */,
+				56A9B4F52162521100D9F79F /* channelmemberlist.json in Resources */,
 				4D04921E214654780071AB9A /* Assets.xcassets in Resources */,
 				4D6DB13A21492A58001BAD64 /* Contact.storyboard in Resources */,
 			);
@@ -388,21 +404,25 @@
 				4D98E88E2153CF4800E11EF4 /* ContactDatabaseHelper.swift in Sources */,
 				4D98E8602153C27D00E11EF4 /* AddContactViewContoller.swift in Sources */,
 				4D98E8862153CE4100E11EF4 /* ICipher.swift in Sources */,
+				56A9B4DF2161FF3A00D9F79F /* ChannelMemberListViewController.swift in Sources */,
 				4D98E88B2153CEF100E11EF4 /* IPValidator.swift in Sources */,
 				4D6DB14221492B83001BAD64 /* ChannelDetailViewContoller.swift in Sources */,
 				4D98E87A2153CB4600E11EF4 /* NotificationPanelViewController.swift in Sources */,
 				4D6DB12F2149262D001BAD64 /* EncryptionUtils.swift in Sources */,
 				4D6DB13821492A46001BAD64 /* ContactListViewContoller.swift in Sources */,
+				56A9B4E12162042200D9F79F /* MemberDetailViewController.swift in Sources */,
 				4D98E8852153CE4100E11EF4 /* AESCipher.swift in Sources */,
 				4D6DB13421492655001BAD64 /* LoginViewContoller.swift in Sources */,
+				56A9B4E321620EED00D9F79F /* ChannelMemberListViewModel.swift in Sources */,
 				4D98E88A2153CEF100E11EF4 /* ModelConstants.swift in Sources */,
 				4D98E86C2153C5C300E11EF4 /* HomeScreenViewController.swift in Sources */,
 				4D6DB13C21492A6D001BAD64 /* ChannelListViewContoller.swift in Sources */,
+				56A9B4F02162141700D9F79F /* ChannelMemberListTableViewCell.swift in Sources */,
 				4D98E8732153C7F100E11EF4 /* GroupMembersViewController.swift in Sources */,
+				56A9B4DD2161FE4500D9F79F /* SettingsViewController.swift in Sources */,
 				4D98E88C2153CEF100E11EF4 /* RSAEncryptDecrypt.swift in Sources */,
 				4D98E86A2153C5C300E11EF4 /* TermAndConditionViewController.swift in Sources */,
 				4D98E8772153C99900E11EF4 /* ContactDetailViewController.swift in Sources */,
-				4D6DB15A21493396001BAD64 /* SettingViewController.swift in Sources */,
 				4D7CD4EC214679170006EABC /* AppDelegate.swift in Sources */,
 				4D98E8822153CE1300E11EF4 /* AES256Cipher.swift in Sources */,
 				4D6DB14021492A96001BAD64 /* LoginViewModel.swift in Sources */,
