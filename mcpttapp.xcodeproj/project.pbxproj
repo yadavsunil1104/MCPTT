@@ -12,12 +12,10 @@
 		4D6DB12F2149262D001BAD64 /* EncryptionUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6DB12E2149262D001BAD64 /* EncryptionUtils.swift */; };
 		4D6DB13421492655001BAD64 /* LoginViewContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6DB13321492655001BAD64 /* LoginViewContoller.swift */; };
 		4D6DB1362149266B001BAD64 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D6DB1352149266B001BAD64 /* Login.storyboard */; };
-		4D6DB13821492A46001BAD64 /* ContactListViewContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6DB13721492A46001BAD64 /* ContactListViewContoller.swift */; };
 		4D6DB13A21492A58001BAD64 /* Contact.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D6DB13921492A58001BAD64 /* Contact.storyboard */; };
-		4D6DB13C21492A6D001BAD64 /* ChannelListViewContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6DB13B21492A6D001BAD64 /* ChannelListViewContoller.swift */; };
 		4D6DB13E21492A7D001BAD64 /* Channel.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D6DB13D21492A7D001BAD64 /* Channel.storyboard */; };
 		4D6DB14021492A96001BAD64 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6DB13F21492A96001BAD64 /* LoginViewModel.swift */; };
-		4D6DB14221492B83001BAD64 /* ChannelDetailViewContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6DB14121492B83001BAD64 /* ChannelDetailViewContoller.swift */; };
+		4D6DB14221492B83001BAD64 /* ChannelViewContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6DB14121492B83001BAD64 /* ChannelViewContoller.swift */; };
 		4D6DB15A21493396001BAD64 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6DB15921493396001BAD64 /* SettingViewController.swift */; };
 		4D6DB15C21493484001BAD64 /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D6DB15B21493484001BAD64 /* Setting.storyboard */; };
 		4D7CD4EC214679170006EABC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7CD4E8214679170006EABC /* AppDelegate.swift */; };
@@ -40,6 +38,15 @@
 		4D98E88E2153CF4800E11EF4 /* ContactDatabaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D98E88D2153CF4800E11EF4 /* ContactDatabaseHelper.swift */; };
 		4DB894552164C55700A55941 /* CommonUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB894542164C55700A55941 /* CommonUtility.swift */; };
 		4DB894572164D30600A55941 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB894562164D30600A55941 /* UIViewController+Extensions.swift */; };
+		D0D6FE5D216233C000C4B843 /* ChannelMenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D6FE5C216233C000C4B843 /* ChannelMenuBar.swift */; };
+		D0D6FE5F21639EDC00C4B843 /* ChannelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D6FE5E21639EDC00C4B843 /* ChannelExtension.swift */; };
+		D0D6FE612163F32900C4B843 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D6FE602163F32900C4B843 /* MenuCell.swift */; };
+		D0D6FE632163F51C00C4B843 /* ChannelListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D6FE622163F51C00C4B843 /* ChannelListCell.swift */; };
+		D0D6FE652163FCF900C4B843 /* ContactListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D6FE642163FCF900C4B843 /* ContactListCell.swift */; };
+		D0D6FE722164792F00C4B843 /* channelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D6FE712164792F00C4B843 /* channelCell.swift */; };
+		D0D6FE74216492CE00C4B843 /* channelCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0D6FE73216492CE00C4B843 /* channelCell.xib */; };
+		D0D6FE7A2164AEDF00C4B843 /* ContactCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0D6FE792164AEDF00C4B843 /* ContactCell.xib */; };
+		D0D6FE7C2164AEF800C4B843 /* ConactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D6FE7B2164AEF800C4B843 /* ConactCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,12 +57,10 @@
 		4D6DB12E2149262D001BAD64 /* EncryptionUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncryptionUtils.swift; sourceTree = "<group>"; };
 		4D6DB13321492655001BAD64 /* LoginViewContoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewContoller.swift; sourceTree = "<group>"; };
 		4D6DB1352149266B001BAD64 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
-		4D6DB13721492A46001BAD64 /* ContactListViewContoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListViewContoller.swift; sourceTree = "<group>"; };
 		4D6DB13921492A58001BAD64 /* Contact.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Contact.storyboard; sourceTree = "<group>"; };
-		4D6DB13B21492A6D001BAD64 /* ChannelListViewContoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelListViewContoller.swift; sourceTree = "<group>"; };
 		4D6DB13D21492A7D001BAD64 /* Channel.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Channel.storyboard; sourceTree = "<group>"; };
 		4D6DB13F21492A96001BAD64 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
-		4D6DB14121492B83001BAD64 /* ChannelDetailViewContoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelDetailViewContoller.swift; sourceTree = "<group>"; };
+		4D6DB14121492B83001BAD64 /* ChannelViewContoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelViewContoller.swift; sourceTree = "<group>"; };
 		4D6DB14421492CBD001BAD64 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		4D6DB15321492F22001BAD64 /* mcpttapp-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "mcpttapp-Bridging-Header.h"; sourceTree = "<group>"; };
 		4D6DB15921493396001BAD64 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
@@ -80,6 +85,15 @@
 		4D98E88D2153CF4800E11EF4 /* ContactDatabaseHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactDatabaseHelper.swift; sourceTree = "<group>"; };
 		4DB894542164C55700A55941 /* CommonUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonUtility.swift; sourceTree = "<group>"; };
 		4DB894562164D30600A55941 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		D0D6FE5C216233C000C4B843 /* ChannelMenuBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelMenuBar.swift; sourceTree = "<group>"; };
+		D0D6FE5E21639EDC00C4B843 /* ChannelExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelExtension.swift; sourceTree = "<group>"; };
+		D0D6FE602163F32900C4B843 /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
+		D0D6FE622163F51C00C4B843 /* ChannelListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelListCell.swift; sourceTree = "<group>"; };
+		D0D6FE642163FCF900C4B843 /* ContactListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListCell.swift; sourceTree = "<group>"; };
+		D0D6FE712164792F00C4B843 /* channelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = channelCell.swift; sourceTree = "<group>"; };
+		D0D6FE73216492CE00C4B843 /* channelCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = channelCell.xib; sourceTree = "<group>"; };
+		D0D6FE792164AEDF00C4B843 /* ContactCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactCell.xib; sourceTree = "<group>"; };
+		D0D6FE7B2164AEF800C4B843 /* ConactCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConactCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,7 +143,6 @@
 		4D6DB13021492638001BAD64 /* Contact */ = {
 			isa = PBXGroup;
 			children = (
-				4D6DB13721492A46001BAD64 /* ContactListViewContoller.swift */,
 				4D6DB13921492A58001BAD64 /* Contact.storyboard */,
 				4D98E85F2153C27D00E11EF4 /* AddContactViewContoller.swift */,
 				4D98E8762153C99900E11EF4 /* ContactDetailViewController.swift */,
@@ -150,9 +163,11 @@
 		4D6DB13221492638001BAD64 /* Channel */ = {
 			isa = PBXGroup;
 			children = (
-				4D6DB13B21492A6D001BAD64 /* ChannelListViewContoller.swift */,
 				4D6DB13D21492A7D001BAD64 /* Channel.storyboard */,
-				4D6DB14121492B83001BAD64 /* ChannelDetailViewContoller.swift */,
+				4D6DB14121492B83001BAD64 /* ChannelViewContoller.swift */,
+				D0D6FE752164AE6100C4B843 /* MenuBar */,
+				D0D6FE772164AE8E00C4B843 /* ChannelList */,
+				D0D6FE782164AEBB00C4B843 /* ContactList */,
 			);
 			path = Channel;
 			sourceTree = "<group>";
@@ -168,6 +183,7 @@
 		4D6DB15421493353001BAD64 /* Setting */ = {
 			isa = PBXGroup;
 			children = (
+				D0D6FE762164AE7000C4B843 /* ChannelList */,
 				4D6DB15921493396001BAD64 /* SettingViewController.swift */,
 				4D6DB15B21493484001BAD64 /* Setting.storyboard */,
 			);
@@ -179,6 +195,7 @@
 			children = (
 				4D6DB12E2149262D001BAD64 /* EncryptionUtils.swift */,
 				4DB894542164C55700A55941 /* CommonUtility.swift */,
+				D0D6FE5E21639EDC00C4B843 /* ChannelExtension.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -280,6 +297,42 @@
 			path = Common;
 			sourceTree = "<group>";
 		};
+		D0D6FE752164AE6100C4B843 /* MenuBar */ = {
+			isa = PBXGroup;
+			children = (
+				D0D6FE5C216233C000C4B843 /* ChannelMenuBar.swift */,
+				D0D6FE602163F32900C4B843 /* MenuCell.swift */,
+			);
+			path = MenuBar;
+			sourceTree = "<group>";
+		};
+		D0D6FE762164AE7000C4B843 /* ChannelList */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ChannelList;
+			sourceTree = "<group>";
+		};
+		D0D6FE772164AE8E00C4B843 /* ChannelList */ = {
+			isa = PBXGroup;
+			children = (
+				D0D6FE622163F51C00C4B843 /* ChannelListCell.swift */,
+				D0D6FE712164792F00C4B843 /* channelCell.swift */,
+				D0D6FE73216492CE00C4B843 /* channelCell.xib */,
+			);
+			path = ChannelList;
+			sourceTree = "<group>";
+		};
+		D0D6FE782164AEBB00C4B843 /* ContactList */ = {
+			isa = PBXGroup;
+			children = (
+				D0D6FE642163FCF900C4B843 /* ContactListCell.swift */,
+				D0D6FE792164AEDF00C4B843 /* ContactCell.xib */,
+				D0D6FE7B2164AEF800C4B843 /* ConactCell.swift */,
+			);
+			path = ContactList;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -290,8 +343,7 @@
 				4D04920F214654770071AB9A /* Sources */,
 				4D049210214654770071AB9A /* Frameworks */,
 				4D049211214654770071AB9A /* Resources */,
-				4D049228214655170071AB9A /* Swiftlint Script */,
-				4DCF8C62214FA4D1003EDF43 /* Run Script */,
+				4DCF8C62214FA4D1003EDF43 /* Swift-Lint */,
 			);
 			buildRules = (
 			);
@@ -347,6 +399,8 @@
 				4D6DB15C21493484001BAD64 /* Setting.storyboard in Resources */,
 				4D98E8752153C88F00E11EF4 /* Group.storyboard in Resources */,
 				4D049221214654780071AB9A /* LaunchScreen.storyboard in Resources */,
+				D0D6FE74216492CE00C4B843 /* channelCell.xib in Resources */,
+				D0D6FE7A2164AEDF00C4B843 /* ContactCell.xib in Resources */,
 				4D04921E214654780071AB9A /* Assets.xcassets in Resources */,
 				4D6DB13A21492A58001BAD64 /* Contact.storyboard in Resources */,
 			);
@@ -355,33 +409,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		4D049228214655170071AB9A /* Swiftlint Script */ = {
+		4DCF8C62214FA4D1003EDF43 /* Swift-Lint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Swiftlint Script";
+			name = "Swift-Lint";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
-		};
-		4DCF8C62214FA4D1003EDF43 /* Run Script */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Run Script";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -396,22 +436,27 @@
 				4D98E8862153CE4100E11EF4 /* ICipher.swift in Sources */,
 				4DB894572164D30600A55941 /* UIViewController+Extensions.swift in Sources */,
 				4D98E88B2153CEF100E11EF4 /* IPValidator.swift in Sources */,
-				4D6DB14221492B83001BAD64 /* ChannelDetailViewContoller.swift in Sources */,
+				4D6DB14221492B83001BAD64 /* ChannelViewContoller.swift in Sources */,
 				4D98E87A2153CB4600E11EF4 /* NotificationPanelViewController.swift in Sources */,
+				D0D6FE5F21639EDC00C4B843 /* ChannelExtension.swift in Sources */,
 				4D6DB12F2149262D001BAD64 /* EncryptionUtils.swift in Sources */,
-				4D6DB13821492A46001BAD64 /* ContactListViewContoller.swift in Sources */,
 				4D98E8852153CE4100E11EF4 /* AESCipher.swift in Sources */,
+				D0D6FE7C2164AEF800C4B843 /* ConactCell.swift in Sources */,
 				4D6DB13421492655001BAD64 /* LoginViewContoller.swift in Sources */,
 				4D98E88A2153CEF100E11EF4 /* ModelConstants.swift in Sources */,
 				4D98E86C2153C5C300E11EF4 /* HomeScreenViewController.swift in Sources */,
-				4D6DB13C21492A6D001BAD64 /* ChannelListViewContoller.swift in Sources */,
+				D0D6FE612163F32900C4B843 /* MenuCell.swift in Sources */,
 				4D98E8732153C7F100E11EF4 /* GroupMembersViewController.swift in Sources */,
+				D0D6FE652163FCF900C4B843 /* ContactListCell.swift in Sources */,
+				D0D6FE722164792F00C4B843 /* channelCell.swift in Sources */,
 				4D98E88C2153CEF100E11EF4 /* RSAEncryptDecrypt.swift in Sources */,
 				4D98E86A2153C5C300E11EF4 /* TermAndConditionViewController.swift in Sources */,
 				4D98E8772153C99900E11EF4 /* ContactDetailViewController.swift in Sources */,
 				4D6DB15A21493396001BAD64 /* SettingViewController.swift in Sources */,
 				4DB894552164C55700A55941 /* CommonUtility.swift in Sources */,
+				D0D6FE632163F51C00C4B843 /* ChannelListCell.swift in Sources */,
 				4D7CD4EC214679170006EABC /* AppDelegate.swift in Sources */,
+				D0D6FE5D216233C000C4B843 /* ChannelMenuBar.swift in Sources */,
 				4D98E8822153CE1300E11EF4 /* AES256Cipher.swift in Sources */,
 				4D6DB14021492A96001BAD64 /* LoginViewModel.swift in Sources */,
 			);

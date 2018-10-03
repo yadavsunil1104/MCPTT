@@ -20,6 +20,13 @@ final class HomeScreenViewController: UIViewController {
         counterTimer.fire()
     }
 
+    @IBAction func loginButtonAction(_ sender: Any) {
+        /// Calling of ChannelView Controller
+        let layout = UICollectionViewFlowLayout()
+        let vc = ChannelViewContoller.makeViewController(collectionViewLayout: layout)
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
