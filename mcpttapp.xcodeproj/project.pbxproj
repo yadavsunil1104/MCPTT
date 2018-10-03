@@ -47,6 +47,8 @@
 		D0D6FE74216492CE00C4B843 /* channelCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0D6FE73216492CE00C4B843 /* channelCell.xib */; };
 		D0D6FE7A2164AEDF00C4B843 /* ContactCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0D6FE792164AEDF00C4B843 /* ContactCell.xib */; };
 		D0D6FE7C2164AEF800C4B843 /* ConactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D6FE7B2164AEF800C4B843 /* ConactCell.swift */; };
+		D0D6FE7E2164B76900C4B843 /* SectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0D6FE7D2164B76900C4B843 /* SectionHeaderView.xib */; };
+		D0D6FE802164BE0200C4B843 /* SectionHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D6FE7F2164BE0200C4B843 /* SectionHeaderCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -94,6 +96,8 @@
 		D0D6FE73216492CE00C4B843 /* channelCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = channelCell.xib; sourceTree = "<group>"; };
 		D0D6FE792164AEDF00C4B843 /* ContactCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactCell.xib; sourceTree = "<group>"; };
 		D0D6FE7B2164AEF800C4B843 /* ConactCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConactCell.swift; sourceTree = "<group>"; };
+		D0D6FE7D2164B76900C4B843 /* SectionHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SectionHeaderView.xib; sourceTree = "<group>"; };
+		D0D6FE7F2164BE0200C4B843 /* SectionHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -319,6 +323,8 @@
 				D0D6FE622163F51C00C4B843 /* ChannelListCell.swift */,
 				D0D6FE712164792F00C4B843 /* channelCell.swift */,
 				D0D6FE73216492CE00C4B843 /* channelCell.xib */,
+				D0D6FE7D2164B76900C4B843 /* SectionHeaderView.xib */,
+				D0D6FE7F2164BE0200C4B843 /* SectionHeaderCell.swift */,
 			);
 			path = ChannelList;
 			sourceTree = "<group>";
@@ -343,7 +349,6 @@
 				4D04920F214654770071AB9A /* Sources */,
 				4D049210214654770071AB9A /* Frameworks */,
 				4D049211214654770071AB9A /* Resources */,
-				4DCF8C62214FA4D1003EDF43 /* Swift-Lint */,
 			);
 			buildRules = (
 			);
@@ -399,6 +404,7 @@
 				4D6DB15C21493484001BAD64 /* Setting.storyboard in Resources */,
 				4D98E8752153C88F00E11EF4 /* Group.storyboard in Resources */,
 				4D049221214654780071AB9A /* LaunchScreen.storyboard in Resources */,
+				D0D6FE7E2164B76900C4B843 /* SectionHeaderView.xib in Resources */,
 				D0D6FE74216492CE00C4B843 /* channelCell.xib in Resources */,
 				D0D6FE7A2164AEDF00C4B843 /* ContactCell.xib in Resources */,
 				4D04921E214654780071AB9A /* Assets.xcassets in Resources */,
@@ -407,23 +413,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		4DCF8C62214FA4D1003EDF43 /* Swift-Lint */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Swift-Lint";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4D04920F214654770071AB9A /* Sources */ = {
@@ -456,6 +445,7 @@
 				4DB894552164C55700A55941 /* CommonUtility.swift in Sources */,
 				D0D6FE632163F51C00C4B843 /* ChannelListCell.swift in Sources */,
 				4D7CD4EC214679170006EABC /* AppDelegate.swift in Sources */,
+				D0D6FE802164BE0200C4B843 /* SectionHeaderCell.swift in Sources */,
 				D0D6FE5D216233C000C4B843 /* ChannelMenuBar.swift in Sources */,
 				4D98E8822153CE1300E11EF4 /* AES256Cipher.swift in Sources */,
 				4D6DB14021492A96001BAD64 /* LoginViewModel.swift in Sources */,

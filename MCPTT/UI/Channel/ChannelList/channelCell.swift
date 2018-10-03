@@ -17,6 +17,7 @@ class channelCell: BaseCell {
     @IBOutlet weak var countStatusLabel: UIImageView!
     @IBOutlet weak var statusDescriptionIconImage: UIImageView!
     @IBOutlet weak var statusDescriptionLabel: UILabel!
+    @IBOutlet weak var separatorView: UILabel!
     
     override func setupViews() {
         super.setupViews()

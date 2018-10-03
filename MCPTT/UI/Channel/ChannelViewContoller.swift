@@ -13,7 +13,7 @@ private let ChannelListCellId = "ChannelListCellId"
 private let ContactListCellId = "ContactListCellId"
 
 final class ChannelViewContoller: UICollectionViewController, UICollectionViewDelegateFlowLayout {
-
+    
     static func makeViewController(collectionViewLayout: UICollectionViewLayout) -> ChannelViewContoller {
         let storyboard = UIStoryboard(name: "Channel", bundle: nil)
         let ChannelView = storyboard.instantiateViewController(withIdentifier: "ChannelViewContoller") as! ChannelViewContoller
@@ -29,7 +29,6 @@ final class ChannelViewContoller: UICollectionViewController, UICollectionViewDe
         navigationItem.titleView = titleLabel
         
         collectionView?.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
-//        collectionView?.register(UICollectionReusableView.self, forSupplementaryViewOfKind: "Separator", withReuseIdentifier: reuseIdentifier)
         
         collectionView?.backgroundColor = UIColor.white
         

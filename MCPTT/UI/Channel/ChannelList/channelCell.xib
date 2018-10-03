@@ -73,7 +73,7 @@
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fyS-fL-Xzt" userLabel="SeparatorView">
                         <rect key="frame" x="0.0" y="98" width="375" height="1"/>
-                        <color key="backgroundColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="1" id="8uX-CR-FAq"/>
                         </constraints>
@@ -118,6 +118,7 @@
                 <outlet property="channelName" destination="12d-xL-3ep" id="BXR-yR-MYW"/>
                 <outlet property="channelStatusIcon" destination="YLB-uf-TVh" id="WoH-9p-19M"/>
                 <outlet property="countStatusLabel" destination="DK7-ig-1Hu" id="phn-Ql-Pka"/>
+                <outlet property="separatorView" destination="fyS-fL-Xzt" id="0GS-f1-TpD"/>
                 <outlet property="statusDescriptionIconImage" destination="9sb-nV-q5F" id="Znp-UJ-cVp"/>
                 <outlet property="statusDescriptionLabel" destination="LOw-Qv-rKg" id="9td-cA-bqN"/>
             </connections>
