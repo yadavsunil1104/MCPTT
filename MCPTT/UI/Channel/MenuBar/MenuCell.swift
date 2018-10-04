@@ -25,6 +25,8 @@ class BaseCell: UICollectionViewCell {
 
 class  MenuCell: BaseCell, UICollectionViewDelegateFlowLayout {
     
+    //@IBOutlet weak var menuBarLabel: UILabel!
+    
     let menuBarLabel: UILabel = {
         let mbLabel = UILabel()
         mbLabel.textColor = UIColor.gray
@@ -46,11 +48,18 @@ class  MenuCell: BaseCell, UICollectionViewDelegateFlowLayout {
     
     override func setupViews() {
         super.setupViews()
+        menuBarLabel.textColor = UIColor.blue
+        
         addSubview(menuBarLabel)
-        addConstraintsWithFormat(format: "H:|[v0(200)]|", views: menuBarLabel)
+        addConstraintsWithFormat(format: "H:|-20-[v0]-20-|", views: menuBarLabel)
         addConstraintsWithFormat(format: "V:|[v0(35)]|", views: menuBarLabel)
         
         addConstraint(NSLayoutConstraint(item: menuBarLabel, attribute: .centerX, relatedBy: .equal, toItem: self, attribute: .centerX, multiplier: 1, constant: 0))
         addConstraint(NSLayoutConstraint(item: menuBarLabel, attribute: .centerY, relatedBy: .equal, toItem: self, attribute: .centerY, multiplier: 1, constant: 0))
+    }
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        menuBarLabel.backgroundColor = UIColor.blue
     }
 }

@@ -21,7 +21,7 @@ class ContactListCell: BaseCell,UICollectionViewDataSource, UICollectionViewDele
     
     var contactListArray : [String] = ["Contact1","contact2","contact3","contact4","contact5","contact6","contact7","contact8","contact9","contact10"]
     
-    let ContactListCell = "ContactistCell"
+    let ContactListCell = "ChannelMenuCell"
     
     override func setupViews() {
         super.setupViews()
@@ -30,6 +30,7 @@ class ContactListCell: BaseCell,UICollectionViewDataSource, UICollectionViewDele
         addConstraintsWithFormat(format: "H:|[v0]|", views: collectionView)
         addConstraintsWithFormat(format: "V:|[v0]|", views: collectionView)
         
+       ///I have added menu cell only for checking/demo, need to add contact Cell here,
         collectionView.register(MenuCell.self, forCellWithReuseIdentifier: ContactListCell)
     }
     
@@ -38,6 +39,7 @@ class ContactListCell: BaseCell,UICollectionViewDataSource, UICollectionViewDele
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        ///I have added menu cell only for checking/demo, need to add contact Cell here,
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ContactListCell, for: indexPath) as! MenuCell
         cell.menuBarLabel.text = contactListArray[indexPath.row]
         return cell

@@ -12,7 +12,7 @@ class  ChannelMenuBar: UIView, UICollectionViewDelegate, UICollectionViewDataSou
     
     var channelViewContoller: ChannelViewContoller?
     var horizontalBarLeftAnchorConstraint: NSLayoutConstraint?
-    let reuseIdentifier = "channelMenuCellID"
+    let reuseIdentifier = "ChannelMenuCell"
     
     lazy var collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
@@ -23,10 +23,12 @@ class  ChannelMenuBar: UIView, UICollectionViewDelegate, UICollectionViewDataSou
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        collectionView.register(MenuCell.self, forCellWithReuseIdentifier: reuseIdentifier)
+        
         self.addSubview(collectionView)
         addConstraintsWithFormat(format: "H:|[v0]|", views: collectionView)
         addConstraintsWithFormat(format: "V:|[v0]|", views: collectionView)
+        
+        collectionView.register(MenuCell.self, forCellWithReuseIdentifier: reuseIdentifier)
         collectionView.delegate = self
         collectionView.dataSource = self
         

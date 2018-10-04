@@ -21,8 +21,6 @@ class channelCell: BaseCell {
     
     override func setupViews() {
         super.setupViews()
-        backgroundColor = UIColor.brown
-
     }
     
     override func awakeFromNib() {

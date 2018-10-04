@@ -46,12 +46,10 @@ final class ChannelViewContoller: UICollectionViewController, UICollectionViewDe
     /// Setting Up Channel/Conatct Menu Bar
     private func setupChannelMenuBar() {
         navigationController?.hidesBarsOnSwipe = false
-
+        
         view.addSubview(channelMenuBar)
         view.addConstraintsWithFormat(format: "H:|[v0]|", views: channelMenuBar)
         view.addConstraintsWithFormat(format: "V:|[v0(110)]", views: channelMenuBar)
-        
-        channelMenuBar.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true
     }
     
     /// Create a custom navigation button for "Settings"

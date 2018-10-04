@@ -10,6 +10,4 @@ import UIKit
 
 class SectionHeaderCell: UICollectionReusableView {
     @IBOutlet weak var headerNameLabel: UILabel!
-
-            
 }
