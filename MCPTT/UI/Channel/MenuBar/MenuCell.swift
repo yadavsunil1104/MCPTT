@@ -48,7 +48,6 @@ class  MenuCell: BaseCell, UICollectionViewDelegateFlowLayout {
     
     override func setupViews() {
         super.setupViews()
-        menuBarLabel.textColor = UIColor.blue
         
         addSubview(menuBarLabel)
         addConstraintsWithFormat(format: "H:|-20-[v0]-20-|", views: menuBarLabel)
@@ -60,6 +59,5 @@ class  MenuCell: BaseCell, UICollectionViewDelegateFlowLayout {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        menuBarLabel.backgroundColor = UIColor.blue
     }
 }

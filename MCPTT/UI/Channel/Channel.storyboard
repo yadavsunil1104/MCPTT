@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -31,20 +30,7 @@
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="271"/>
                                     <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9oG-cM-AKI">
-                                            <rect key="frame" x="0.0" y="501" width="375" height="147"/>
-                                            <color key="backgroundColor" red="0.30840110780000002" green="0.5618229508" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <viewLayoutGuide key="safeArea" id="2F1-4d-lBt"/>
-                                        </view>
-                                    </subviews>
                                 </view>
-                                <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="9oG-cM-AKI" secondAttribute="bottom" constant="-377" id="1Su-c1-pwA"/>
-                                    <constraint firstAttribute="trailing" secondItem="9oG-cM-AKI" secondAttribute="trailing" id="Oa6-9z-9H8"/>
-                                    <constraint firstItem="9oG-cM-AKI" firstAttribute="top" secondItem="8Xn-zp-EhK" secondAttribute="top" constant="501" id="QG9-t4-ett"/>
-                                    <constraint firstItem="9oG-cM-AKI" firstAttribute="leading" secondItem="8Xn-zp-EhK" secondAttribute="leading" id="Rlk-ko-zJ0"/>
-                                </constraints>
                             </collectionViewCell>
                         </cells>
                         <connections>
@@ -52,10 +38,11 @@
                             <outlet property="delegate" destination="a4j-KW-qZQ" id="NGn-FP-sF7"/>
                         </connections>
                     </collectionView>
+                    <navigationItem key="navigationItem" id="uLX-AI-EVZ"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Awf-AM-QBD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="293.60000000000002" y="-189.3553223388306"/>
+            <point key="canvasLocation" x="1232.8" y="-189.3553223388306"/>
         </scene>
     </scenes>
 </document>

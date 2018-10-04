@@ -11,10 +11,10 @@ import UIKit
 final class HomeScreenViewController: UIViewController {
 
     var counterTimer: Timer!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationController?.isNavigationBarHidden = true
+        navigationController?.isNavigationBarHidden = false
         // Do any additional setup after loading the view, typically from a nib.
         counterTimer = Timer.scheduledTimer(timeInterval: 3, target: self, selector: #selector(startAppFlow), userInfo: nil, repeats: false)
         counterTimer.fire()

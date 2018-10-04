@@ -23,7 +23,6 @@ final class ChannelViewContoller: UICollectionViewController, UICollectionViewDe
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.hidesBackButton = true
-    
         let titleLabel = UILabel(frame: CGRect(x: 0, y: 0, width: view.frame.size.width-32, height: view.frame.size.height))
         titleLabel.text = "MCPTT"
         navigationItem.titleView = titleLabel
@@ -49,7 +48,7 @@ final class ChannelViewContoller: UICollectionViewController, UICollectionViewDe
         
         view.addSubview(channelMenuBar)
         view.addConstraintsWithFormat(format: "H:|[v0]|", views: channelMenuBar)
-        view.addConstraintsWithFormat(format: "V:|[v0(110)]", views: channelMenuBar)
+        view.addConstraintsWithFormat(format: "V:|[v0(110)]", views: channelMenuBar)        
     }
     
     /// Create a custom navigation button for "Settings"
@@ -121,6 +120,6 @@ final class ChannelViewContoller: UICollectionViewController, UICollectionViewDe
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize.init(width: view.frame.width, height: view.frame.height-110)
+        return CGSize.init(width: view.frame.width, height: view.frame.height-120)
     }
 }
