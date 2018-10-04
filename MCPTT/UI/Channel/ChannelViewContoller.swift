@@ -22,6 +22,7 @@ final class ChannelViewContoller: UICollectionViewController, UICollectionViewDe
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.isNavigationBarHidden = false
         navigationItem.hidesBackButton = true
         let titleLabel = UILabel(frame: CGRect(x: 0, y: 0, width: view.frame.size.width-32, height: view.frame.size.height))
         titleLabel.text = "MCPTT"
@@ -64,7 +65,7 @@ final class ChannelViewContoller: UICollectionViewController, UICollectionViewDe
     func setupCollectionView() {
         if let flowLayout = collectionView?.collectionViewLayout as? UICollectionViewFlowLayout {
             flowLayout.scrollDirection = .horizontal
-            flowLayout.minimumLineSpacing = 10
+            flowLayout.minimumLineSpacing = 0
         }
 
         collectionView?.backgroundColor = UIColor.white

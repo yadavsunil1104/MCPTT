@@ -31,7 +31,7 @@ class ChannelListCell: BaseCell,UICollectionViewDataSource, UICollectionViewDele
         addConstraintsWithFormat(format: "H:|[v0]|", views: collectionView)
         addConstraintsWithFormat(format: "V:|[v0]|", views: collectionView)
         
-        collectionView.register(UINib.init(nibName: "channelCell", bundle: nil), forCellWithReuseIdentifier:"ChannelCell" )
+        collectionView.register(UINib.init(nibName: "ChannelCell", bundle: nil), forCellWithReuseIdentifier:"ChannelCell" )
         collectionView.register(UINib.init(nibName: "SectionHeaderView", bundle: nil), forSupplementaryViewOfKind:UICollectionElementKindSectionHeader , withReuseIdentifier: "Header")
 
     }
@@ -86,7 +86,7 @@ class ChannelListCell: BaseCell,UICollectionViewDataSource, UICollectionViewDele
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
-        return CGSize.init(width: frame.width, height: 40)
+        return CGSize.init(width: frame.width, height: 30)
     }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if section == 0 {
@@ -97,16 +97,25 @@ class ChannelListCell: BaseCell,UICollectionViewDataSource, UICollectionViewDele
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ChannelCell", for: indexPath) as! channelCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ChannelCell", for: indexPath) as! ChannelCell
         cell.separatorView.isHidden = true
         if indexPath.section == 0 {
             cell.channelName?.text = "LAPD"
+            cell.channelStatusIcon.image = UIImage(imageLiteralResourceName: "ActiveChannel_Image")
+            cell.statusDescriptionLabel.text = "%s speakes for %d sec"
+            cell.countStatusLabel.isHidden = true
             return cell
 
         } else {
             cell.separatorView.isHidden = false
             cell.channelName?.text = channelListArray[indexPath.row]
             cell.broadcastIconImage.image = UIImage(imageLiteralResourceName: "nav_more_icon")
+            cell.channelStatusIcon.image = UIImage(imageLiteralResourceName: "IdleChannel_Image")
+            cell.statusDescriptionLabel.text = "%s speakes for %d sec"
+            cell.countStatusLabel.text = "2"
+            cell.statusDescriptionIconImage.image = UIImage(imageLiteralResourceName: "Call_Missed_Icon")
+            cell.channelIconImage.image = UIImage(imageLiteralResourceName: "Emergency_Icon")
+            cell.broadcastIconImage.image = UIImage(imageLiteralResourceName: "Broadcast_Icon")
             return cell
         }
     
@@ -115,9 +124,14 @@ class ChannelListCell: BaseCell,UICollectionViewDataSource, UICollectionViewDele
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width:frame.width, height: 100)
     }
-//
+
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         return 0
     }
    
+    
+    /// Did Select Method of Cell
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    }
+    
 }
