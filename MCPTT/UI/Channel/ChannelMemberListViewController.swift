@@ -26,7 +26,7 @@ final class ChannelMemberListViewController: UIViewController {
     }
     func initView() {
         
-        self.navigationItem.title = "Memeber List"
+        self.title = "Memeber List"
 //        memberListTableView.estimatedRowHeight = 64
 //        memberListTableView.rowHeight = UITableViewAutomaticDimension
     }
@@ -56,7 +56,7 @@ extension ChannelMemberListViewController: UITableViewDelegate, UITableViewDataS
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "ChannelMemberListTableViewCell", for: indexPath) as? ChannelMemberListTableViewCell else {
             fatalError("Cell not exists in storyboard")
         }
-        
+         cell.selectionStyle = .none
          let cellVM = viewModel.getCellViewModel( at: indexPath )
          cell.configureChanneListCell(channelMemberListCellVM: cellVM)
         
@@ -67,9 +67,12 @@ extension ChannelMemberListViewController: UITableViewDelegate, UITableViewDataS
         return 70
     }
     
-    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let contactStoryboard = UIStoryboard.init(name: "Contact", bundle: nil)
-        let memberDetailVc = contactStoryboard.instantiateViewController(withIdentifier: "MemberDetailViewController")
+        guard let memberDetailVc = contactStoryboard.instantiateViewController(withIdentifier: "MemberDetailViewController") as? MemberDetailViewController else {
+            return
+        }
+        memberDetailVc.channelMemberListModel = viewModel.getCellViewModel( at: indexPath )
         self.navigationController?.pushViewController(memberDetailVc, animated: true)
     }
 }

@@ -8,6 +8,12 @@
 
 import UIKit
 
+enum MemberAvailability: String {
+    case online
+    case offline
+    case dnd
+}
+
 class ChannelMemberListTableViewCell: UITableViewCell {
 
     @IBOutlet weak var memberNameLabel: UILabel!
@@ -30,6 +36,16 @@ class ChannelMemberListTableViewCell: UITableViewCell {
         
         memberNameLabel.text = channelMemberListCellVM.memberName
         memberEmailLabel.text = channelMemberListCellVM.memberEmail
+        switch channelMemberListCellVM.memberAvailablabilityStatus {
+        case MemberAvailability.online.rawValue:
+            memberAvailabiltyStatus.image = UIImage(named: "blue-circele")
+        case MemberAvailability.offline.rawValue:
+            memberAvailabiltyStatus.image = UIImage(named: "orange-circle")
+        case MemberAvailability.dnd.rawValue:
+            memberAvailabiltyStatus.image = UIImage(named: "gray-circlepng")
+        default:
+           memberAvailabiltyStatus.image = UIImage(named: "blue-circele")
+        }
         if channelMemberListCellVM.isMemeberInConatctList {
             addMemberButton.isHidden = true
         } else {

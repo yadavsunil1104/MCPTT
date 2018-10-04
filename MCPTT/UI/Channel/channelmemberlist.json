@@ -1,19 +1,19 @@
 
 {
     "members": [
-              {
-            "name": "Anderw Adams",
-            "email": "andrew.adams@gmail.com",
-            "availablity": "onlne",
+               {
+                "name": "Anderw Adams",
+                "email": "andrew.adams@gmail.com",
+                "availablity": "online",
               },
               {
-                  "name": "Anderw Adams",
-                  "email": "andrew.adams@gmail.com",
+                  "name": "Maggie Forbes",
+                  "email": "maggie.forbes@gmail.com",
                   "availablity": "offline",
               },
               {
-                  "name": "Anderw Adams",
-                  "email": "andrew.adams@gmail.com",
+                  "name": "Grace Olsen",
+                  "email": "grace.olsen@gmail.com",
                   "availablity": "dnd",
               }
                ]
