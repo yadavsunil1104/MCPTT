@@ -11,15 +11,22 @@ import UIKit
 final class HomeScreenViewController: UIViewController {
 
     var counterTimer: Timer!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationController?.isNavigationBarHidden = true
+        navigationController?.isNavigationBarHidden = false
         // Do any additional setup after loading the view, typically from a nib.
         counterTimer = Timer.scheduledTimer(timeInterval: 3, target: self, selector: #selector(startAppFlow), userInfo: nil, repeats: false)
         counterTimer.fire()
     }
 
+    @IBAction func loginButtonAction(_ sender: Any) {
+        /// Calling of ChannelView Controller
+        let layout = UICollectionViewFlowLayout()
+        let vc = ChannelViewContoller.makeViewController(collectionViewLayout: layout)
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
