@@ -7,8 +7,12 @@
 //
 
 import UIKit
+import WebKit
 
 final class LoginViewContoller: UIViewController {
+    
+    @IBOutlet private weak var continueButton: UIButton!
+    @IBOutlet private weak var webView: WKWebView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,5 +28,9 @@ final class LoginViewContoller: UIViewController {
 }
 
 private extension LoginViewContoller {
-
+    @IBAction func continueButtonPressed() {
+        let layout = UICollectionViewFlowLayout()
+        let vc = ChannelViewContoller.makeViewController(collectionViewLayout: layout)
+        navigationController?.pushViewController(vc, animated: true)
+    }
 }

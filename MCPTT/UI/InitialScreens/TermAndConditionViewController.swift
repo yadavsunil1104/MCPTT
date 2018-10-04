@@ -17,7 +17,7 @@ final class TermAndConditionViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        continueButton.isEnabled = false
         // Do any additional setup after loading the view.
     }
 
@@ -44,10 +44,19 @@ private extension TermAndConditionViewController {
     }
     
     @IBAction func continueButtonPressed() {
-        
+        CommonUtility.appLaunchFirstTime()
+        let loginViewContoller = LoginViewContoller.instantiateFromStoryboard("Login", storyboardId: "LoginViewContoller")
+        navigationController?.pushViewController(loginViewContoller, animated: true)
     }
     
     @IBAction func checkboxButtonPressed() {
+        if !checkBoxButton.isSelected {
+            checkBoxButton.isSelected = true
+            continueButton.isEnabled = true
+        } else {
+            checkBoxButton.isSelected = false
+            continueButton.isEnabled = false
+        }
         
     }
 }

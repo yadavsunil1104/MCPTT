@@ -13,17 +13,53 @@
         <!--Login View Contoller-->
         <scene sceneID="Gkd-4P-RsE">
             <objects>
-                <viewController id="szE-Ps-dxV" customClass="LoginViewContoller" customModule="mcpttapp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewContoller" id="szE-Ps-dxV" customClass="LoginViewContoller" customModule="mcpttapp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gKL-pE-aQ2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F24-XX-Ldi">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="462"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="462" id="GRT-h1-M9y"/>
+                                </constraints>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RkK-2f-Dwq">
+                                <rect key="frame" x="74" y="577" width="227" height="30"/>
+                                <color key="backgroundColor" red="0.015686274509803921" green="0.45490196078431372" blue="0.67450980392156867" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="NA8-81-8QY"/>
+                                </constraints>
+                                <state key="normal" title="Continue"/>
+                                <connections>
+                                    <action selector="continueButtonPressed" destination="szE-Ps-dxV" eventType="touchUpInside" id="7PA-uV-4yc"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="F24-XX-Ldi" firstAttribute="trailing" secondItem="AOK-gD-063" secondAttribute="trailing" id="2Ku-bE-vj1"/>
+                            <constraint firstItem="RkK-2f-Dwq" firstAttribute="leading" secondItem="AOK-gD-063" secondAttribute="leading" constant="74" id="Afi-lQ-rid"/>
+                            <constraint firstItem="F24-XX-Ldi" firstAttribute="leading" secondItem="AOK-gD-063" secondAttribute="leading" id="T5B-nm-KSr"/>
+                            <constraint firstItem="F24-XX-Ldi" firstAttribute="top" secondItem="gKL-pE-aQ2" secondAttribute="top" id="Tdz-AZ-u5e"/>
+                            <constraint firstItem="AOK-gD-063" firstAttribute="trailing" secondItem="RkK-2f-Dwq" secondAttribute="trailing" constant="74" id="pYm-Ei-ttH"/>
+                            <constraint firstItem="AOK-gD-063" firstAttribute="bottom" secondItem="RkK-2f-Dwq" secondAttribute="bottom" constant="60" id="uBe-c1-sYC"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="AOK-gD-063"/>
                     </view>
+                    <connections>
+                        <outlet property="continueButton" destination="RkK-2f-Dwq" id="yOY-VK-aBZ"/>
+                        <outlet property="webView" destination="F24-XX-Ldi" id="Dm8-fG-h2N"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tod-lM-XYu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="468" y="-213"/>
+            <point key="canvasLocation" x="468" y="-213.64317841079463"/>
         </scene>
     </scenes>
 </document>
