@@ -9,6 +9,11 @@
 import UIKit
 
 final class TermAndConditionViewController: UIViewController {
+    
+    @IBOutlet private weak var descriptionTextView: UITextView!
+    @IBOutlet private weak var cancelButton: UIButton!
+    @IBOutlet private weak var continueButton: UIButton!
+    @IBOutlet private weak var checkBoxButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,5 +35,19 @@ final class TermAndConditionViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+}
 
+private extension TermAndConditionViewController {
+    
+    @IBAction func cancelButtonPressed() {
+        
+    }
+    
+    @IBAction func continueButtonPressed() {
+        
+    }
+    
+    @IBAction func checkboxButtonPressed() {
+        
+    }
 }

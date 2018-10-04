@@ -15,6 +15,10 @@ build-tools-env/
 build.xcarchive/
 buildtimes.json
 
+## Various settings
+xcuserdata/
+*.pbxuser
+
 ## Obj-C/Swift specific
 *.hmap
 *.ipa
@@ -22,6 +26,7 @@ buildtimes.json
 ## Playgrounds
 timeline.xctimeline
 playground.xcworkspace
+Breakpoints_v2.xcbkptlist
 
 # Swift Package Manager
 #
