@@ -43,6 +43,8 @@
 		56A9B4E321620EED00D9F79F /* ChannelMemberListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A9B4E221620EED00D9F79F /* ChannelMemberListViewModel.swift */; };
 		56A9B4F02162141700D9F79F /* ChannelMemberListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A9B4EF2162141700D9F79F /* ChannelMemberListTableViewCell.swift */; };
 		56A9B4F52162521100D9F79F /* channelmemberlist.json in Resources */ = {isa = PBXBuildFile; fileRef = 56A9B4F42162521100D9F79F /* channelmemberlist.json */; };
+		4DB894552164C55700A55941 /* CommonUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB894542164C55700A55941 /* CommonUtility.swift */; };
+		4DB894572164D30600A55941 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB894562164D30600A55941 /* UIViewController+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -86,6 +88,8 @@
 		56A9B4E221620EED00D9F79F /* ChannelMemberListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelMemberListViewModel.swift; sourceTree = "<group>"; };
 		56A9B4EF2162141700D9F79F /* ChannelMemberListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelMemberListTableViewCell.swift; sourceTree = "<group>"; };
 		56A9B4F42162521100D9F79F /* channelmemberlist.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = channelmemberlist.json; sourceTree = "<group>"; };
+		4DB894542164C55700A55941 /* CommonUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonUtility.swift; sourceTree = "<group>"; };
+		4DB894562164D30600A55941 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				4D6DB12E2149262D001BAD64 /* EncryptionUtils.swift */,
+				4DB894542164C55700A55941 /* CommonUtility.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -196,6 +201,7 @@
 		4D7CD4E6214679160006EABC /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				4DB894562164D30600A55941 /* UIViewController+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -405,6 +411,7 @@
 				4D98E8602153C27D00E11EF4 /* AddContactViewContoller.swift in Sources */,
 				4D98E8862153CE4100E11EF4 /* ICipher.swift in Sources */,
 				56A9B4DF2161FF3A00D9F79F /* ChannelMemberListViewController.swift in Sources */,
+				4DB894572164D30600A55941 /* UIViewController+Extensions.swift in Sources */,
 				4D98E88B2153CEF100E11EF4 /* IPValidator.swift in Sources */,
 				4D6DB14221492B83001BAD64 /* ChannelDetailViewContoller.swift in Sources */,
 				4D98E87A2153CB4600E11EF4 /* NotificationPanelViewController.swift in Sources */,
@@ -423,6 +430,8 @@
 				4D98E88C2153CEF100E11EF4 /* RSAEncryptDecrypt.swift in Sources */,
 				4D98E86A2153C5C300E11EF4 /* TermAndConditionViewController.swift in Sources */,
 				4D98E8772153C99900E11EF4 /* ContactDetailViewController.swift in Sources */,
+				4D6DB15A21493396001BAD64 /* SettingViewController.swift in Sources */,
+				4DB894552164C55700A55941 /* CommonUtility.swift in Sources */,
 				4D7CD4EC214679170006EABC /* AppDelegate.swift in Sources */,
 				4D98E8822153CE1300E11EF4 /* AES256Cipher.swift in Sources */,
 				4D6DB14021492A96001BAD64 /* LoginViewModel.swift in Sources */,
