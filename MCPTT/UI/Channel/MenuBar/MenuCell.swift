@@ -24,9 +24,7 @@ class BaseCell: UICollectionViewCell {
 }
 
 class  MenuCell: BaseCell, UICollectionViewDelegateFlowLayout {
-    
-    //@IBOutlet weak var menuBarLabel: UILabel!
-    
+        
     let menuBarLabel: UILabel = {
         let mbLabel = UILabel()
         mbLabel.textColor = UIColor.gray

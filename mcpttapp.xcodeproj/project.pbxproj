@@ -38,13 +38,13 @@
 		4D98E88E2153CF4800E11EF4 /* ContactDatabaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D98E88D2153CF4800E11EF4 /* ContactDatabaseHelper.swift */; };
 		4DB894552164C55700A55941 /* CommonUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB894542164C55700A55941 /* CommonUtility.swift */; };
 		4DB894572164D30600A55941 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB894562164D30600A55941 /* UIViewController+Extensions.swift */; };
+		D09D3F06216615A100E9995B /* ChannelListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09D3F05216615A100E9995B /* ChannelListCell.swift */; };
 		D0D6FE5D216233C000C4B843 /* ChannelMenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D6FE5C216233C000C4B843 /* ChannelMenuBar.swift */; };
 		D0D6FE5F21639EDC00C4B843 /* ChannelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D6FE5E21639EDC00C4B843 /* ChannelExtension.swift */; };
 		D0D6FE612163F32900C4B843 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D6FE602163F32900C4B843 /* MenuCell.swift */; };
-		D0D6FE632163F51C00C4B843 /* ChannelListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D6FE622163F51C00C4B843 /* ChannelListCell.swift */; };
 		D0D6FE652163FCF900C4B843 /* ContactListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D6FE642163FCF900C4B843 /* ContactListCell.swift */; };
-		D0D6FE722164792F00C4B843 /* channelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D6FE712164792F00C4B843 /* channelCell.swift */; };
-		D0D6FE74216492CE00C4B843 /* channelCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0D6FE73216492CE00C4B843 /* channelCell.xib */; };
+		D0D6FE722164792F00C4B843 /* ChannelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D6FE712164792F00C4B843 /* ChannelCell.swift */; };
+		D0D6FE74216492CE00C4B843 /* ChannelCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0D6FE73216492CE00C4B843 /* ChannelCell.xib */; };
 		D0D6FE7A2164AEDF00C4B843 /* ContactCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0D6FE792164AEDF00C4B843 /* ContactCell.xib */; };
 		D0D6FE7C2164AEF800C4B843 /* ConactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D6FE7B2164AEF800C4B843 /* ConactCell.swift */; };
 		D0D6FE7E2164B76900C4B843 /* SectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0D6FE7D2164B76900C4B843 /* SectionHeaderView.xib */; };
@@ -87,13 +87,13 @@
 		4D98E88D2153CF4800E11EF4 /* ContactDatabaseHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactDatabaseHelper.swift; sourceTree = "<group>"; };
 		4DB894542164C55700A55941 /* CommonUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonUtility.swift; sourceTree = "<group>"; };
 		4DB894562164D30600A55941 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		D09D3F05216615A100E9995B /* ChannelListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelListCell.swift; sourceTree = "<group>"; };
 		D0D6FE5C216233C000C4B843 /* ChannelMenuBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelMenuBar.swift; sourceTree = "<group>"; };
 		D0D6FE5E21639EDC00C4B843 /* ChannelExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelExtension.swift; sourceTree = "<group>"; };
 		D0D6FE602163F32900C4B843 /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
-		D0D6FE622163F51C00C4B843 /* ChannelListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelListCell.swift; sourceTree = "<group>"; };
 		D0D6FE642163FCF900C4B843 /* ContactListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListCell.swift; sourceTree = "<group>"; };
-		D0D6FE712164792F00C4B843 /* channelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = channelCell.swift; sourceTree = "<group>"; };
-		D0D6FE73216492CE00C4B843 /* channelCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = channelCell.xib; sourceTree = "<group>"; };
+		D0D6FE712164792F00C4B843 /* ChannelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelCell.swift; sourceTree = "<group>"; };
+		D0D6FE73216492CE00C4B843 /* ChannelCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChannelCell.xib; sourceTree = "<group>"; };
 		D0D6FE792164AEDF00C4B843 /* ContactCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactCell.xib; sourceTree = "<group>"; };
 		D0D6FE7B2164AEF800C4B843 /* ConactCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConactCell.swift; sourceTree = "<group>"; };
 		D0D6FE7D2164B76900C4B843 /* SectionHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SectionHeaderView.xib; sourceTree = "<group>"; };
@@ -320,9 +320,9 @@
 		D0D6FE772164AE8E00C4B843 /* ChannelList */ = {
 			isa = PBXGroup;
 			children = (
-				D0D6FE622163F51C00C4B843 /* ChannelListCell.swift */,
-				D0D6FE712164792F00C4B843 /* channelCell.swift */,
-				D0D6FE73216492CE00C4B843 /* channelCell.xib */,
+				D09D3F05216615A100E9995B /* ChannelListCell.swift */,
+				D0D6FE712164792F00C4B843 /* ChannelCell.swift */,
+				D0D6FE73216492CE00C4B843 /* ChannelCell.xib */,
 				D0D6FE7D2164B76900C4B843 /* SectionHeaderView.xib */,
 				D0D6FE7F2164BE0200C4B843 /* SectionHeaderCell.swift */,
 			);
@@ -405,7 +405,7 @@
 				4D98E8752153C88F00E11EF4 /* Group.storyboard in Resources */,
 				4D049221214654780071AB9A /* LaunchScreen.storyboard in Resources */,
 				D0D6FE7E2164B76900C4B843 /* SectionHeaderView.xib in Resources */,
-				D0D6FE74216492CE00C4B843 /* channelCell.xib in Resources */,
+				D0D6FE74216492CE00C4B843 /* ChannelCell.xib in Resources */,
 				D0D6FE7A2164AEDF00C4B843 /* ContactCell.xib in Resources */,
 				4D04921E214654780071AB9A /* Assets.xcassets in Resources */,
 				4D6DB13A21492A58001BAD64 /* Contact.storyboard in Resources */,
@@ -437,13 +437,13 @@
 				D0D6FE612163F32900C4B843 /* MenuCell.swift in Sources */,
 				4D98E8732153C7F100E11EF4 /* GroupMembersViewController.swift in Sources */,
 				D0D6FE652163FCF900C4B843 /* ContactListCell.swift in Sources */,
-				D0D6FE722164792F00C4B843 /* channelCell.swift in Sources */,
+				D0D6FE722164792F00C4B843 /* ChannelCell.swift in Sources */,
 				4D98E88C2153CEF100E11EF4 /* RSAEncryptDecrypt.swift in Sources */,
 				4D98E86A2153C5C300E11EF4 /* TermAndConditionViewController.swift in Sources */,
 				4D98E8772153C99900E11EF4 /* ContactDetailViewController.swift in Sources */,
 				4D6DB15A21493396001BAD64 /* SettingViewController.swift in Sources */,
 				4DB894552164C55700A55941 /* CommonUtility.swift in Sources */,
-				D0D6FE632163F51C00C4B843 /* ChannelListCell.swift in Sources */,
+				D09D3F06216615A100E9995B /* ChannelListCell.swift in Sources */,
 				4D7CD4EC214679170006EABC /* AppDelegate.swift in Sources */,
 				D0D6FE802164BE0200C4B843 /* SectionHeaderCell.swift in Sources */,
 				D0D6FE5D216233C000C4B843 /* ChannelMenuBar.swift in Sources */,

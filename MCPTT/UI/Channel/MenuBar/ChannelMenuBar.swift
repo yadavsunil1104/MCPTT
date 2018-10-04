@@ -12,6 +12,7 @@ class  ChannelMenuBar: UIView, UICollectionViewDelegate, UICollectionViewDataSou
     
     var channelViewContoller: ChannelViewContoller?
     var horizontalBarLeftAnchorConstraint: NSLayoutConstraint?
+    var separatorBarLeftAnchorConstraint : NSLayoutConstraint?
     let reuseIdentifier = "ChannelMenuCell"
     
     lazy var collectionView: UICollectionView = {
@@ -36,10 +37,11 @@ class  ChannelMenuBar: UIView, UICollectionViewDelegate, UICollectionViewDataSou
         collectionView.selectItem(at: selectedIndexPath as IndexPath, animated: false, scrollPosition: .right)
 
         setupHorizontalBar()
+        setupSeparatorBar()
     }
     
     /// Setting up horizontal Bar
-    func setupHorizontalBar() {
+    private func setupHorizontalBar() {
         let horizontalBarView = UIView()
         horizontalBarView.backgroundColor = UIColor.rgb(red: 0, green: 176, blue: 240)  // 0,176,240/#00b0f0 - lightBlue as per UX color
         horizontalBarView.translatesAutoresizingMaskIntoConstraints = false
@@ -51,6 +53,20 @@ class  ChannelMenuBar: UIView, UICollectionViewDelegate, UICollectionViewDataSou
         horizontalBarView.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
         horizontalBarView.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 1/2).isActive = true
         horizontalBarView.heightAnchor.constraint(equalToConstant: 6).isActive = true
+    }
+    
+    private func setupSeparatorBar() {
+        let separatorBarView = UIView()
+        separatorBarView.backgroundColor = UIColor.rgb(red: 214, green: 214, blue: 214)
+        separatorBarView.translatesAutoresizingMaskIntoConstraints = false
+        addSubview(separatorBarView)
+        
+        separatorBarLeftAnchorConstraint = separatorBarView.leftAnchor.constraint(equalTo: self.leftAnchor)
+        separatorBarLeftAnchorConstraint?.isActive = true
+        
+        separatorBarView.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
+        separatorBarView.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 1).isActive = true
+        separatorBarView.heightAnchor.constraint(equalToConstant: 1).isActive = true
     }
     
     /// Collection view Delegate/DataSource Methods

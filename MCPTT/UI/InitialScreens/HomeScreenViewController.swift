@@ -16,8 +16,8 @@ final class HomeScreenViewController: UIViewController {
         super.viewDidLoad()
         navigationController?.isNavigationBarHidden = false
         // Do any additional setup after loading the view, typically from a nib.
-        counterTimer = Timer.scheduledTimer(timeInterval: 3, target: self, selector: #selector(startAppFlow), userInfo: nil, repeats: false)
-        counterTimer.fire()
+//        counterTimer = Timer.scheduledTimer(timeInterval: 3, target: self, selector: #selector(startAppFlow), userInfo: nil, repeats: false)
+//        counterTimer.fire()
     }
 
     @IBAction func loginButtonAction(_ sender: Any) {
