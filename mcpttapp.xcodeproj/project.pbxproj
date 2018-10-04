@@ -43,6 +43,8 @@
 		56A9B4E321620EED00D9F79F /* ChannelMemberListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A9B4E221620EED00D9F79F /* ChannelMemberListViewModel.swift */; };
 		56A9B4F02162141700D9F79F /* ChannelMemberListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A9B4EF2162141700D9F79F /* ChannelMemberListTableViewCell.swift */; };
 		56A9B4F52162521100D9F79F /* channelmemberlist.json in Resources */ = {isa = PBXBuildFile; fileRef = 56A9B4F42162521100D9F79F /* channelmemberlist.json */; };
+		56A9B4F72164C6C700D9F79F /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A9B4F62164C6C700D9F79F /* SettingsViewModel.swift */; };
+		56A9B4F92164D7E800D9F79F /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A9B4F82164D7E800D9F79F /* SettingsTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -86,6 +88,8 @@
 		56A9B4E221620EED00D9F79F /* ChannelMemberListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelMemberListViewModel.swift; sourceTree = "<group>"; };
 		56A9B4EF2162141700D9F79F /* ChannelMemberListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelMemberListTableViewCell.swift; sourceTree = "<group>"; };
 		56A9B4F42162521100D9F79F /* channelmemberlist.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = channelmemberlist.json; sourceTree = "<group>"; };
+		56A9B4F62164C6C700D9F79F /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		56A9B4F82164D7E800D9F79F /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +185,8 @@
 			children = (
 				4D6DB15B21493484001BAD64 /* Setting.storyboard */,
 				56A9B4DC2161FE4500D9F79F /* SettingsViewController.swift */,
+				56A9B4F62164C6C700D9F79F /* SettingsViewModel.swift */,
+				56A9B4F82164D7E800D9F79F /* SettingsTableViewCell.swift */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -418,6 +424,7 @@
 				4D98E86C2153C5C300E11EF4 /* HomeScreenViewController.swift in Sources */,
 				4D6DB13C21492A6D001BAD64 /* ChannelListViewContoller.swift in Sources */,
 				56A9B4F02162141700D9F79F /* ChannelMemberListTableViewCell.swift in Sources */,
+				56A9B4F92164D7E800D9F79F /* SettingsTableViewCell.swift in Sources */,
 				4D98E8732153C7F100E11EF4 /* GroupMembersViewController.swift in Sources */,
 				56A9B4DD2161FE4500D9F79F /* SettingsViewController.swift in Sources */,
 				4D98E88C2153CEF100E11EF4 /* RSAEncryptDecrypt.swift in Sources */,
@@ -426,6 +433,7 @@
 				4D7CD4EC214679170006EABC /* AppDelegate.swift in Sources */,
 				4D98E8822153CE1300E11EF4 /* AES256Cipher.swift in Sources */,
 				4D6DB14021492A96001BAD64 /* LoginViewModel.swift in Sources */,
+				56A9B4F72164C6C700D9F79F /* SettingsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

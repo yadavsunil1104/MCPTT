@@ -51,6 +51,11 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ufC-yN-NbA">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <view key="tableFooterView" contentMode="scaleToFill" id="cMr-5j-C09">
+                                    <rect key="frame" x="0.0" y="93" width="375" height="1"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </view>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChannelMemberListTableViewCell" rowHeight="65" id="fT3-wr-9X5" customClass="ChannelMemberListTableViewCell" customModule="mcpttapp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="65"/>
@@ -88,6 +93,7 @@
                                                         <constraint firstAttribute="height" constant="36" id="3GJ-vV-s6A"/>
                                                         <constraint firstAttribute="width" constant="36" id="ZMe-CD-tqf"/>
                                                     </constraints>
+                                                    <state key="normal" image="plus"/>
                                                     <connections>
                                                         <action selector="addContact:" destination="fT3-wr-9X5" eventType="touchUpInside" id="SZd-nf-vUx"/>
                                                     </connections>
@@ -156,4 +162,7 @@
             <point key="canvasLocation" x="1309.5999999999999" y="26.53673163418291"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="plus" width="60" height="60"/>
+    </resources>
 </document>
