@@ -58,6 +58,8 @@
 		A7D21665216763C300684877 /* ConversationViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D21664216763C300684877 /* ConversationViewPresenter.swift */; };
 		A7D21667216763CE00684877 /* ConversationViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D21666216763CE00684877 /* ConversationViewProtocols.swift */; };
 		A7D21669216763E200684877 /* ConversationViewWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D21668216763E200684877 /* ConversationViewWireFrame.swift */; };
+		D066F74B21677EA800CF286D /* ChannelListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D066F74921677EA800CF286D /* ChannelListViewModel.swift */; };
+		D066F74C21677EA800CF286D /* channelListDemoData.json in Resources */ = {isa = PBXBuildFile; fileRef = D066F74A21677EA800CF286D /* channelListDemoData.json */; };
 		D09D3F06216615A100E9995B /* ChannelListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09D3F05216615A100E9995B /* ChannelListCell.swift */; };
 		D0D6FE5D216233C000C4B843 /* ChannelMenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D6FE5C216233C000C4B843 /* ChannelMenuBar.swift */; };
 		D0D6FE5F21639EDC00C4B843 /* ChannelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D6FE5E21639EDC00C4B843 /* ChannelExtension.swift */; };
@@ -127,6 +129,8 @@
 		A7D21664216763C300684877 /* ConversationViewPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationViewPresenter.swift; sourceTree = "<group>"; };
 		A7D21666216763CE00684877 /* ConversationViewProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationViewProtocols.swift; sourceTree = "<group>"; };
 		A7D21668216763E200684877 /* ConversationViewWireFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationViewWireFrame.swift; sourceTree = "<group>"; };
+		D066F74921677EA800CF286D /* ChannelListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelListViewModel.swift; sourceTree = "<group>"; };
+		D066F74A21677EA800CF286D /* channelListDemoData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = channelListDemoData.json; sourceTree = "<group>"; };
 		D09D3F05216615A100E9995B /* ChannelListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelListCell.swift; sourceTree = "<group>"; };
 		D0D6FE5C216233C000C4B843 /* ChannelMenuBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelMenuBar.swift; sourceTree = "<group>"; };
 		D0D6FE5E21639EDC00C4B843 /* ChannelExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelExtension.swift; sourceTree = "<group>"; };
@@ -448,6 +452,15 @@
 			path = Interactor;
 			sourceTree = "<group>";
 		};
+		D066F74821677EA800CF286D /* ChannelListModel */ = {
+			isa = PBXGroup;
+			children = (
+				D066F74921677EA800CF286D /* ChannelListViewModel.swift */,
+				D066F74A21677EA800CF286D /* channelListDemoData.json */,
+			);
+			path = ChannelListModel;
+			sourceTree = "<group>";
+		};
 		D0D6FE752164AE6100C4B843 /* MenuBar */ = {
 			isa = PBXGroup;
 			children = (
@@ -460,6 +473,7 @@
 		D0D6FE772164AE8E00C4B843 /* ChannelList */ = {
 			isa = PBXGroup;
 			children = (
+				D066F74821677EA800CF286D /* ChannelListModel */,
 				D09D3F05216615A100E9995B /* ChannelListCell.swift */,
 				D0D6FE712164792F00C4B843 /* ChannelCell.swift */,
 				D0D6FE73216492CE00C4B843 /* ChannelCell.xib */,
@@ -541,6 +555,7 @@
 				565B8BF3216711B0003EB3C2 /* channelmemberlist.json in Resources */,
 				4D6DB13E21492A7D001BAD64 /* Channel.storyboard in Resources */,
 				A7D216582167636C00684877 /* ChatMessageCell.xib in Resources */,
+				D066F74C21677EA800CF286D /* channelListDemoData.json in Resources */,
 				4D6DB1362149266B001BAD64 /* Login.storyboard in Resources */,
 				4D98E87C2153CB6C00E11EF4 /* NotificationPanel.storyboard in Resources */,
 				4D6DB15C21493484001BAD64 /* Setting.storyboard in Resources */,
@@ -568,6 +583,7 @@
 				565B8BE7216710C3003EB3C2 /* SettingsTableViewCell.swift in Sources */,
 				4D98E8862153CE4100E11EF4 /* ICipher.swift in Sources */,
 				4DB894572164D30600A55941 /* UIViewController+Extensions.swift in Sources */,
+				D066F74B21677EA800CF286D /* ChannelListViewModel.swift in Sources */,
 				4D98E88B2153CEF100E11EF4 /* IPValidator.swift in Sources */,
 				4D6DB14221492B83001BAD64 /* ChannelViewContoller.swift in Sources */,
 				4D98E87A2153CB4600E11EF4 /* NotificationPanelViewController.swift in Sources */,

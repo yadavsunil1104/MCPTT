@@ -114,6 +114,7 @@
                 <constraint firstItem="eLh-dQ-N8h" firstAttribute="bottom" secondItem="fyS-fL-Xzt" secondAttribute="bottom" constant="1" id="gd8-Xc-jvC"/>
                 <constraint firstItem="DK7-ig-1Hu" firstAttribute="leading" secondItem="LOw-Qv-rKg" secondAttribute="trailing" constant="15" id="hnu-n2-BDe"/>
                 <constraint firstItem="vy5-OJ-CjM" firstAttribute="leading" secondItem="DK7-ig-1Hu" secondAttribute="leading" id="l26-YZ-yet"/>
+                <constraint firstItem="LOw-Qv-rKg" firstAttribute="top" secondItem="YLB-uf-TVh" secondAttribute="bottom" constant="-4" id="olM-Nf-dij"/>
                 <constraint firstAttribute="bottom" secondItem="9sb-nV-q5F" secondAttribute="bottom" constant="14" id="r70-BH-7wc"/>
                 <constraint firstItem="9sb-nV-q5F" firstAttribute="top" secondItem="12d-xL-3ep" secondAttribute="bottom" constant="13" id="rcY-XG-gyE"/>
                 <constraint firstItem="RvZ-Ff-yrf" firstAttribute="top" secondItem="9sb-nV-q5F" secondAttribute="top" id="wLy-5h-z2g"/>
@@ -131,7 +132,6 @@
                 <outlet property="separatorView" destination="fyS-fL-Xzt" id="0GS-f1-TpD"/>
                 <outlet property="statusDescriptionIconImage" destination="9sb-nV-q5F" id="Znp-UJ-cVp"/>
                 <outlet property="statusDescriptionLabel" destination="LOw-Qv-rKg" id="9td-cA-bqN"/>
-                <outlet property="statusLabelLeadingConstraints" destination="F9t-3a-rcI" id="RQP-XH-uBO"/>
             </connections>
             <point key="canvasLocation" x="90.5" y="144"/>
         </collectionViewCell>
