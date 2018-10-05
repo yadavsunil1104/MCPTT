@@ -21,9 +21,6 @@
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F24-XX-Ldi">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="462"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="462" id="GRT-h1-M9y"/>
-                                </constraints>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
                                     <wkPreferences key="preferences"/>
@@ -47,6 +44,7 @@
                             <constraint firstItem="RkK-2f-Dwq" firstAttribute="leading" secondItem="AOK-gD-063" secondAttribute="leading" constant="74" id="Afi-lQ-rid"/>
                             <constraint firstItem="F24-XX-Ldi" firstAttribute="leading" secondItem="AOK-gD-063" secondAttribute="leading" id="T5B-nm-KSr"/>
                             <constraint firstItem="F24-XX-Ldi" firstAttribute="top" secondItem="gKL-pE-aQ2" secondAttribute="top" id="Tdz-AZ-u5e"/>
+                            <constraint firstItem="RkK-2f-Dwq" firstAttribute="top" secondItem="F24-XX-Ldi" secondAttribute="bottom" constant="115" id="WBa-Af-e1P"/>
                             <constraint firstItem="AOK-gD-063" firstAttribute="trailing" secondItem="RkK-2f-Dwq" secondAttribute="trailing" constant="74" id="pYm-Ei-ttH"/>
                             <constraint firstItem="AOK-gD-063" firstAttribute="bottom" secondItem="RkK-2f-Dwq" secondAttribute="bottom" constant="60" id="uBe-c1-sYC"/>
                         </constraints>

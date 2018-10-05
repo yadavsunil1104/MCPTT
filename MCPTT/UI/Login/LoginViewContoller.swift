@@ -17,6 +17,7 @@ final class LoginViewContoller: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        webView.load(URLRequest.init(url: URL.init(string: "https://www.google.com/")!))
         
     }
     
@@ -29,6 +30,7 @@ final class LoginViewContoller: UIViewController {
 
 private extension LoginViewContoller {
     @IBAction func continueButtonPressed() {
+        CommonUtility.userLoggedIn(value: true)
         let layout = UICollectionViewFlowLayout()
         let vc = ChannelViewContoller.makeViewController(collectionViewLayout: layout)
         navigationController?.pushViewController(vc, animated: true)

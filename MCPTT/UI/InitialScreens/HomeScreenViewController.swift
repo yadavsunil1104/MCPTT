@@ -27,13 +27,21 @@ final class HomeScreenViewController: UIViewController {
     
     @objc private func startAppFlow() {
         counterTimer.invalidate()
-        guard CommonUtility.isAlreadyLunched() else {
+        if CommonUtility.isAlreadyLunched() {
+            if CommonUtility.isAlreadyLoggedIn() {
+                let layout = UICollectionViewFlowLayout()
+                let vc = ChannelViewContoller.makeViewController(collectionViewLayout: layout)
+                navigationController?.pushViewController(vc, animated: true)
+            } else {
+                let loginViewContoller = LoginViewContoller.instantiateFromStoryboard("Login", storyboardId: "LoginViewContoller")
+                navigationController?.pushViewController(loginViewContoller, animated: true)
+            }
+        } else {
             let termViewContoller = TermAndConditionViewController.instantiateFromStoryboard("Main", storyboardId: "TermAndCondition")
             navigationController?.pushViewController(termViewContoller, animated: true)
             return
         }
-        let loginViewContoller = LoginViewContoller.instantiateFromStoryboard("Login", storyboardId: "LoginViewContoller")
-        navigationController?.pushViewController(loginViewContoller, animated: true)
+        
     }
 
 }
