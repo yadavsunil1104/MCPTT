@@ -50,9 +50,6 @@ class  MenuCell: BaseCell, UICollectionViewDelegateFlowLayout {
         addSubview(menuBarLabel)
         addConstraintsWithFormat(format: "H:|-20-[v0]-20-|", views: menuBarLabel)
         addConstraintsWithFormat(format: "V:|[v0(35)]|", views: menuBarLabel)
-        
-        addConstraint(NSLayoutConstraint(item: menuBarLabel, attribute: .centerX, relatedBy: .equal, toItem: self, attribute: .centerX, multiplier: 1, constant: 0))
-        addConstraint(NSLayoutConstraint(item: menuBarLabel, attribute: .centerY, relatedBy: .equal, toItem: self, attribute: .centerY, multiplier: 1, constant: 0))
     }
     
     override func awakeFromNib() {

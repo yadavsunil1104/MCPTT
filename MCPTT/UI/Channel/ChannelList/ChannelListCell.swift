@@ -9,8 +9,10 @@
 import UIKit
 
 class ChannelListCell: BaseCell,UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
-    
-    var channelListArray : [String] = ["Channel1","Channel2","Channel3","Channel4","Channel5","Channel6","Channel7","Channel8","Channe9","Channe10"]
+
+   fileprivate var idleChannelListArray : [Channel]?
+   fileprivate var activeChannelListArray : [Channel]?
+   fileprivate var icFabButton = UIButton()
     
     lazy var collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
@@ -21,11 +23,19 @@ class ChannelListCell: BaseCell,UICollectionViewDataSource, UICollectionViewDele
         return cv
     }()
 
+    func fetchChannelList() {
+        ChannelListViewModel.shared.fetchChannelData(completion: { (idleChannelArray : [Channel], activeChannelArray : [Channel]?) in
+            self.idleChannelListArray = idleChannelArray
+            self.activeChannelListArray = activeChannelArray
+            self.collectionView.reloadData()
+        })
+    }
+
     override func setupViews() {
         super.setupViews()
+
+        fetchChannelList()
         setupCollectionViewLayout()
-        setupICFabButtons()
-        setupScrollToTopButton()
         
         addSubview(collectionView)
         addConstraintsWithFormat(format: "H:|[v0]|", views: collectionView)
@@ -33,46 +43,6 @@ class ChannelListCell: BaseCell,UICollectionViewDataSource, UICollectionViewDele
         
         collectionView.register(UINib.init(nibName: "ChannelCell", bundle: nil), forCellWithReuseIdentifier:"ChannelCell" )
         collectionView.register(UINib.init(nibName: "SectionHeaderView", bundle: nil), forSupplementaryViewOfKind:UICollectionElementKindSectionHeader , withReuseIdentifier: "Header")
-
-    }
-    
-    func setupICFabButtons() {
-        let icFabButton = UIButton.init(frame: CGRect(x: frame.width-50-15, y: frame.height-50-25, width: 55, height: 55))
-        icFabButton.setTitle("IC", for: .normal)
-        icFabButton.backgroundColor = UIColor.darkGray
-        icFabButton.layer.cornerRadius = 27
-        icFabButton.layer.masksToBounds = true
-        icFabButton.layer.zPosition = 1
-        icFabButton.addTarget(self, action: #selector(icFabpressed), for: .touchUpInside)
-        icFabButton.isUserInteractionEnabled = true
-        insertSubview(icFabButton, at: 0)
-    }
-    
-    func setupScrollToTopButton(){
-        let scrollToTopButton = UIButton.init(frame: CGRect(x: frame.width/2, y: frame.height-30-10, width: 30, height: 30))
-        scrollToTopButton.setTitle("^", for: .normal)
-        scrollToTopButton.backgroundColor = UIColor.darkGray
-        scrollToTopButton.layer.cornerRadius = 15
-        scrollToTopButton.layer.masksToBounds = true
-        scrollToTopButton.layer.zPosition = 1
-        scrollToTopButton.addTarget(self, action: #selector(scrollToToppressed), for: .touchUpInside)
-        scrollToTopButton.isUserInteractionEnabled = true
-        insertSubview(scrollToTopButton, at: 0)
-    }
-    
-    @objc func scrollToToppressed() {
-        print("scroll to top")
-    }
-    
-    @objc func icFabpressed() {
-        print("fab pressed")
-    }
-    
-    func setupCollectionViewLayout() {
-        if let flowLayout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout {
-            flowLayout.scrollDirection = .vertical
-            flowLayout.minimumLineSpacing = 0
-        }
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -90,9 +60,9 @@ class ChannelListCell: BaseCell,UICollectionViewDataSource, UICollectionViewDele
     }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if section == 0 {
-            return 1
+            return activeChannelListArray?.count ?? 0
         } else {
-        return channelListArray.count
+            return idleChannelListArray?.count ?? 0
         }
     }
     
@@ -100,22 +70,14 @@ class ChannelListCell: BaseCell,UICollectionViewDataSource, UICollectionViewDele
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ChannelCell", for: indexPath) as! ChannelCell
         cell.separatorView.isHidden = true
         if indexPath.section == 0 {
-            cell.channelName?.text = "LAPD"
-            cell.channelStatusIcon.image = UIImage(imageLiteralResourceName: "ActiveChannel_Image")
-            cell.statusDescriptionLabel.text = "%s speakes for %d sec"
+            cell.channel = activeChannelListArray?[indexPath.row]
             cell.countStatusLabel.isHidden = true
+            cell.channelIconImage.isHidden = true
             return cell
 
         } else {
+            cell.channel = idleChannelListArray?[indexPath.row]
             cell.separatorView.isHidden = false
-            cell.channelName?.text = channelListArray[indexPath.row]
-            cell.broadcastIconImage.image = UIImage(imageLiteralResourceName: "nav_more_icon")
-            cell.channelStatusIcon.image = UIImage(imageLiteralResourceName: "IdleChannel_Image")
-            cell.statusDescriptionLabel.text = "%s speakes for %d sec"
-            cell.countStatusLabel.text = "2"
-            cell.statusDescriptionIconImage.image = UIImage(imageLiteralResourceName: "Call_Missed_Icon")
-            cell.channelIconImage.image = UIImage(imageLiteralResourceName: "Emergency_Icon")
-            cell.broadcastIconImage.image = UIImage(imageLiteralResourceName: "Broadcast_Icon")
             return cell
         }
     
@@ -134,4 +96,15 @@ class ChannelListCell: BaseCell,UICollectionViewDataSource, UICollectionViewDele
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
     }
     
+}
+
+
+extension ChannelListCell {
+
+    private func setupCollectionViewLayout() {
+        if let flowLayout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout {
+            flowLayout.scrollDirection = .vertical
+            flowLayout.minimumLineSpacing = 0
+        }
+    }
 }

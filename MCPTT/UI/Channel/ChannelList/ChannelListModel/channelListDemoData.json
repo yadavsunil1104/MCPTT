@@ -1,0 +1,123 @@
+{
+  "channels": [
+               {
+               "channel_id": "121",
+               "channel_Status": "active",
+               "channel_name": "MCPTT_Gurgaon",
+               "channel_status_image_name": "ActiveChannel_Image",
+               "channel_icon_image_Name": "Emergency_Icon",
+               "new_received_message_count": "1",
+               "channel_description_status": "text message received "
+
+               },
+               {
+               "channel_id": "122",
+               "channel_Status": "idle",
+               "channel_name": "MCPTT_Banglore",
+               "channel_status_image_name": "IdleChannel_Image",
+               "channel_icon_image_Name": "Emergency_Icon",
+               "new_received_message_count": "1",
+               "missed_ptt_call_count": "2",
+               "ptt_call_icon_image_name": "Call_Missed_Icon",
+               "broadcast_message_call_status_image": "Broadcast_Icon",
+               "channel_description_status": "missed voice ptt"
+               },
+               {
+               "channel_id": "123",
+               "channel_Status": "idle",
+               "channel_name": "MCPTT_TEAM1",
+               "channel_status_image_name": "IdleChannel_Image",
+               "channel_icon_image_Name": "Emergency_Icon",
+               "new_received_message_count": "3",
+               "missed_ptt_call_count": "1",
+               "ptt_call_icon_image_name": "Call_Outgoing_Icon",
+               "broadcast_message_call_status_image": "Broadcast_Icon",
+               "channel_description_status": "text message received"
+               },
+               {
+               "channel_id":"124",
+               "channel_Status":"idle",
+               "channel_name": "MCPTT_TEAM2",
+               "channel_status_image_name": "IdleChannel_Image",
+               "channel_icon_image_Name": "Emergency_Icon",
+               "new_received_message_count": "1",
+               "missed_ptt_call_count": "7",
+               "ptt_call_icon_image_name": "Call_Received_Icon",
+               "broadcast_message_call_status_image": "Broadcast_Icon",
+               "channel_description_status": "text message received"
+               },
+               {
+               "channel_id": "125",
+               "channel_Status":"idle",
+               "channel_name": "MCPTT_Delhi",
+               "channel_status_image_name": "IdleChannel_Image",
+               "channel_icon_image_Name": "Emergency_Icon",
+               "new_received_message_count": "1",
+               "missed_ptt_call_count": "1",
+               "ptt_call_icon_image_name": "Call_Missed_Icon",
+               "broadcast_message_call_status_image": "Broadcast_Icon",
+               "channel_description_status": "missed voice ptt"
+               },
+               {
+               "channel_id": "126",
+               "channel_Status": "idle",
+               "channel_name": "MCPTT_Team4",
+               "channel_status_image_name": "IdleChannel_Image",
+               "channel_icon_image_Name": "Emergency_Icon",
+               "new_received_message_count": "3",
+               "missed_ptt_call_count": "2",
+               "ptt_call_icon_image_name": "Call_Missed_Icon",
+               "broadcast_message_call_status_image": "Broadcast_Icon",
+               "channel_description_status": "missed voice ptt"
+               },
+               {
+               "channel_id": "127",
+               "channel_Status":"idle",
+               "channel_name": "MCPTT_TEAM111",
+               "channel_status_image_name": "IdleChannel_Image",
+               "channel_icon_image_Name": "Emergency_Icon",
+               "new_received_message_count": "1",
+               "missed_ptt_call_count": "3",
+               "ptt_call_icon_image_name": "Call_Missed_Icon",
+               "broadcast_message_call_status_image": "Broadcast_Icon",
+               "channel_description_status": "missed voice ptt"
+               },
+               {
+               "channel_id":"128",
+               "channel_Status":"idle",
+               "channel_name": "MCPTT_TEAM12",
+               "channel_status_image_name": "IdleChannel_Image",
+               "channel_icon_image_Name": "Emergency_Icon",
+               "new_received_message_count": "2",
+               "missed_ptt_call_count": "5",
+               "ptt_call_icon_image_name": "Call_Received_Icon",
+               "broadcast_message_call_status_image": "Broadcast_Icon",
+               "channel_description_status": "text message received"
+               },
+               {
+               "channel_id": "129",
+               "channel_Status": "idle",
+               "channel_name": "MCPTT_TEAM19",
+               "channel_status_image_name": "IdleChannel_Image",
+               "channel_icon_image_Name": "Emergency_Icon",
+               "new_received_message_count": "1",
+               "missed_ptt_call_count": "4",
+               "ptt_call_icon_image_name": "Call_Missed_Icon",
+               "broadcast_message_call_status_image": "Broadcast_Icon",
+               "channel_description_status": "missed voice ptt"
+               },
+               {
+               "channel_id": "130",
+               "channel_Status": "idle",
+               "channel_name": "MCPTT_TEAM10",
+               "channel_status_image_name": "IdleChannel_Image",
+               "channel_icon_image_Name": "Emergency_Icon",
+               "new_received_message_count": "3",
+               "missed_ptt_call_count": "1",
+               "ptt_call_icon_image_name": "Call_Outgoing_Icon",
+               "broadcast_message_call_status_image": "Broadcast_Icon",
+               "channel_description_status": "text message received"
+               }
+
+            ]
+    }
