@@ -16,7 +16,6 @@
 		4D6DB13E21492A7D001BAD64 /* Channel.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D6DB13D21492A7D001BAD64 /* Channel.storyboard */; };
 		4D6DB14021492A96001BAD64 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6DB13F21492A96001BAD64 /* LoginViewModel.swift */; };
 		4D6DB14221492B83001BAD64 /* ChannelViewContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6DB14121492B83001BAD64 /* ChannelViewContoller.swift */; };
-		4D6DB15A21493396001BAD64 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6DB15921493396001BAD64 /* SettingViewController.swift */; };
 		4D6DB15C21493484001BAD64 /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D6DB15B21493484001BAD64 /* Setting.storyboard */; };
 		4D7CD4EC214679170006EABC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7CD4E8214679170006EABC /* AppDelegate.swift */; };
 		4D98E8602153C27D00E11EF4 /* AddContactViewContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D98E85F2153C27D00E11EF4 /* AddContactViewContoller.swift */; };
@@ -38,6 +37,14 @@
 		4D98E88E2153CF4800E11EF4 /* ContactDatabaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D98E88D2153CF4800E11EF4 /* ContactDatabaseHelper.swift */; };
 		4DB894552164C55700A55941 /* CommonUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB894542164C55700A55941 /* CommonUtility.swift */; };
 		4DB894572164D30600A55941 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB894562164D30600A55941 /* UIViewController+Extensions.swift */; };
+		565B8BE6216710C3003EB3C2 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565B8BE3216710C3003EB3C2 /* SettingsViewController.swift */; };
+		565B8BE7216710C3003EB3C2 /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565B8BE4216710C3003EB3C2 /* SettingsTableViewCell.swift */; };
+		565B8BE8216710C3003EB3C2 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565B8BE5216710C3003EB3C2 /* SettingsViewModel.swift */; };
+		565B8BF0216711B0003EB3C2 /* ChannelMemberListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565B8BEC216711B0003EB3C2 /* ChannelMemberListViewModel.swift */; };
+		565B8BF1216711B0003EB3C2 /* ChannelMemberListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565B8BED216711B0003EB3C2 /* ChannelMemberListTableViewCell.swift */; };
+		565B8BF2216711B0003EB3C2 /* ChannelMemberListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565B8BEE216711B0003EB3C2 /* ChannelMemberListViewController.swift */; };
+		565B8BF3216711B0003EB3C2 /* channelmemberlist.json in Resources */ = {isa = PBXBuildFile; fileRef = 565B8BEF216711B0003EB3C2 /* channelmemberlist.json */; };
+		565B8BF52167120A003EB3C2 /* MemberDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565B8BF42167120A003EB3C2 /* MemberDetailViewController.swift */; };
 		D09D3F06216615A100E9995B /* ChannelListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09D3F05216615A100E9995B /* ChannelListCell.swift */; };
 		D0D6FE5D216233C000C4B843 /* ChannelMenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D6FE5C216233C000C4B843 /* ChannelMenuBar.swift */; };
 		D0D6FE5F21639EDC00C4B843 /* ChannelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D6FE5E21639EDC00C4B843 /* ChannelExtension.swift */; };
@@ -65,7 +72,6 @@
 		4D6DB14121492B83001BAD64 /* ChannelViewContoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelViewContoller.swift; sourceTree = "<group>"; };
 		4D6DB14421492CBD001BAD64 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		4D6DB15321492F22001BAD64 /* mcpttapp-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "mcpttapp-Bridging-Header.h"; sourceTree = "<group>"; };
-		4D6DB15921493396001BAD64 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		4D6DB15B21493484001BAD64 /* Setting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
 		4D7CD4E8214679170006EABC /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4D98E85F2153C27D00E11EF4 /* AddContactViewContoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactViewContoller.swift; sourceTree = "<group>"; };
@@ -87,6 +93,14 @@
 		4D98E88D2153CF4800E11EF4 /* ContactDatabaseHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactDatabaseHelper.swift; sourceTree = "<group>"; };
 		4DB894542164C55700A55941 /* CommonUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonUtility.swift; sourceTree = "<group>"; };
 		4DB894562164D30600A55941 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		565B8BE3216710C3003EB3C2 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		565B8BE4216710C3003EB3C2 /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
+		565B8BE5216710C3003EB3C2 /* SettingsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		565B8BEC216711B0003EB3C2 /* ChannelMemberListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelMemberListViewModel.swift; sourceTree = "<group>"; };
+		565B8BED216711B0003EB3C2 /* ChannelMemberListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelMemberListTableViewCell.swift; sourceTree = "<group>"; };
+		565B8BEE216711B0003EB3C2 /* ChannelMemberListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelMemberListViewController.swift; sourceTree = "<group>"; };
+		565B8BEF216711B0003EB3C2 /* channelmemberlist.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = channelmemberlist.json; sourceTree = "<group>"; };
+		565B8BF42167120A003EB3C2 /* MemberDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemberDetailViewController.swift; sourceTree = "<group>"; };
 		D09D3F05216615A100E9995B /* ChannelListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelListCell.swift; sourceTree = "<group>"; };
 		D0D6FE5C216233C000C4B843 /* ChannelMenuBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelMenuBar.swift; sourceTree = "<group>"; };
 		D0D6FE5E21639EDC00C4B843 /* ChannelExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelExtension.swift; sourceTree = "<group>"; };
@@ -148,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				4D6DB13921492A58001BAD64 /* Contact.storyboard */,
+				565B8BF42167120A003EB3C2 /* MemberDetailViewController.swift */,
 				4D98E85F2153C27D00E11EF4 /* AddContactViewContoller.swift */,
 				4D98E8762153C99900E11EF4 /* ContactDetailViewController.swift */,
 			);
@@ -172,6 +187,7 @@
 				D0D6FE752164AE6100C4B843 /* MenuBar */,
 				D0D6FE772164AE8E00C4B843 /* ChannelList */,
 				D0D6FE782164AEBB00C4B843 /* ContactList */,
+				565B8BEB2167113A003EB3C2 /* ChannelMember */,
 			);
 			path = Channel;
 			sourceTree = "<group>";
@@ -187,9 +203,10 @@
 		4D6DB15421493353001BAD64 /* Setting */ = {
 			isa = PBXGroup;
 			children = (
-				D0D6FE762164AE7000C4B843 /* ChannelList */,
-				4D6DB15921493396001BAD64 /* SettingViewController.swift */,
 				4D6DB15B21493484001BAD64 /* Setting.storyboard */,
+				565B8BE3216710C3003EB3C2 /* SettingsViewController.swift */,
+				565B8BE5216710C3003EB3C2 /* SettingsViewModel.swift */,
+				565B8BE4216710C3003EB3C2 /* SettingsTableViewCell.swift */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -301,6 +318,17 @@
 			path = Common;
 			sourceTree = "<group>";
 		};
+		565B8BEB2167113A003EB3C2 /* ChannelMember */ = {
+			isa = PBXGroup;
+			children = (
+				565B8BEE216711B0003EB3C2 /* ChannelMemberListViewController.swift */,
+				565B8BEC216711B0003EB3C2 /* ChannelMemberListViewModel.swift */,
+				565B8BED216711B0003EB3C2 /* ChannelMemberListTableViewCell.swift */,
+				565B8BEF216711B0003EB3C2 /* channelmemberlist.json */,
+			);
+			path = ChannelMember;
+			sourceTree = "<group>";
+		};
 		D0D6FE752164AE6100C4B843 /* MenuBar */ = {
 			isa = PBXGroup;
 			children = (
@@ -308,13 +336,6 @@
 				D0D6FE602163F32900C4B843 /* MenuCell.swift */,
 			);
 			path = MenuBar;
-			sourceTree = "<group>";
-		};
-		D0D6FE762164AE7000C4B843 /* ChannelList */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ChannelList;
 			sourceTree = "<group>";
 		};
 		D0D6FE772164AE8E00C4B843 /* ChannelList */ = {
@@ -398,6 +419,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D98E86B2153C5C300E11EF4 /* Main.storyboard in Resources */,
+				565B8BF3216711B0003EB3C2 /* channelmemberlist.json in Resources */,
 				4D6DB13E21492A7D001BAD64 /* Channel.storyboard in Resources */,
 				4D6DB1362149266B001BAD64 /* Login.storyboard in Resources */,
 				4D98E87C2153CB6C00E11EF4 /* NotificationPanel.storyboard in Resources */,
@@ -422,17 +444,21 @@
 				4D98E8712153C7A400E11EF4 /* GroupsListViewController.swift in Sources */,
 				4D98E88E2153CF4800E11EF4 /* ContactDatabaseHelper.swift in Sources */,
 				4D98E8602153C27D00E11EF4 /* AddContactViewContoller.swift in Sources */,
+				565B8BE7216710C3003EB3C2 /* SettingsTableViewCell.swift in Sources */,
 				4D98E8862153CE4100E11EF4 /* ICipher.swift in Sources */,
 				4DB894572164D30600A55941 /* UIViewController+Extensions.swift in Sources */,
 				4D98E88B2153CEF100E11EF4 /* IPValidator.swift in Sources */,
 				4D6DB14221492B83001BAD64 /* ChannelViewContoller.swift in Sources */,
 				4D98E87A2153CB4600E11EF4 /* NotificationPanelViewController.swift in Sources */,
 				D0D6FE5F21639EDC00C4B843 /* ChannelExtension.swift in Sources */,
+				565B8BF52167120A003EB3C2 /* MemberDetailViewController.swift in Sources */,
 				4D6DB12F2149262D001BAD64 /* EncryptionUtils.swift in Sources */,
 				4D98E8852153CE4100E11EF4 /* AESCipher.swift in Sources */,
 				D0D6FE7C2164AEF800C4B843 /* ConactCell.swift in Sources */,
+				565B8BF0216711B0003EB3C2 /* ChannelMemberListViewModel.swift in Sources */,
 				4D6DB13421492655001BAD64 /* LoginViewContoller.swift in Sources */,
 				4D98E88A2153CEF100E11EF4 /* ModelConstants.swift in Sources */,
+				565B8BE8216710C3003EB3C2 /* SettingsViewModel.swift in Sources */,
 				4D98E86C2153C5C300E11EF4 /* HomeScreenViewController.swift in Sources */,
 				D0D6FE612163F32900C4B843 /* MenuCell.swift in Sources */,
 				4D98E8732153C7F100E11EF4 /* GroupMembersViewController.swift in Sources */,
@@ -441,12 +467,14 @@
 				4D98E88C2153CEF100E11EF4 /* RSAEncryptDecrypt.swift in Sources */,
 				4D98E86A2153C5C300E11EF4 /* TermAndConditionViewController.swift in Sources */,
 				4D98E8772153C99900E11EF4 /* ContactDetailViewController.swift in Sources */,
-				4D6DB15A21493396001BAD64 /* SettingViewController.swift in Sources */,
 				4DB894552164C55700A55941 /* CommonUtility.swift in Sources */,
+				565B8BE6216710C3003EB3C2 /* SettingsViewController.swift in Sources */,
 				D09D3F06216615A100E9995B /* ChannelListCell.swift in Sources */,
 				4D7CD4EC214679170006EABC /* AppDelegate.swift in Sources */,
 				D0D6FE802164BE0200C4B843 /* SectionHeaderCell.swift in Sources */,
 				D0D6FE5D216233C000C4B843 /* ChannelMenuBar.swift in Sources */,
+				565B8BF1216711B0003EB3C2 /* ChannelMemberListTableViewCell.swift in Sources */,
+				565B8BF2216711B0003EB3C2 /* ChannelMemberListViewController.swift in Sources */,
 				4D98E8822153CE1300E11EF4 /* AES256Cipher.swift in Sources */,
 				4D6DB14021492A96001BAD64 /* LoginViewModel.swift in Sources */,
 			);
