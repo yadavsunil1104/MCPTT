@@ -16,8 +16,11 @@ final class LoginViewContoller: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        guard let url = URL.init(string: "https://www.google.com/") else {
+            return
+        }
         // Do any additional setup after loading the view, typically from a nib.
-        webView.load(URLRequest.init(url: URL.init(string: "https://www.google.com/")!))
+        webView.load(URLRequest.init(url: url))
         
     }
     

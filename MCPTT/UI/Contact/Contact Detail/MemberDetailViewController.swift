@@ -51,6 +51,7 @@ class MemberDetailViewController: UIViewController {
     }
     
     @IBAction func craeteChannel(_ sender: Any) {
+        
     }
     
     @IBAction func emailAction(_ sender: Any) {

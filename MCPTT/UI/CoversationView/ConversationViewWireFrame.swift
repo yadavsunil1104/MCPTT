@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class ConversationViewWireFrame:CVPresenterToCVRouterProtocal {
+class ConversationViewWireFrame: CVPresenterToCVRouterProtocal {
    static func createModule() -> ConversationViewController {
         
     if let view = UIStoryboard(name: "CoversationView", bundle: Bundle.main).instantiateViewController(withIdentifier: "ConversationViewController") as? ConversationViewController {

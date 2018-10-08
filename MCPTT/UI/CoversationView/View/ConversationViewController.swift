@@ -16,7 +16,7 @@ class ConversationViewController: UIViewController {
     let refreshControl = UIRefreshControl()
     var presenter: CVViewToCVPresenter?
     var tableView: UITableView?
-    var messageList:[MesssageDetails] = []
+    var messageList: [MesssageDetails] = []
     
     lazy var formatter: DateFormatter = {
         let formatter = DateFormatter()

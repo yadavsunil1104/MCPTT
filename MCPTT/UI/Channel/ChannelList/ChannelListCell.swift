@@ -8,10 +8,10 @@
 
 import UIKit
 
-class ChannelListCell: BaseCell,UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+class ChannelListCell: BaseCell, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
 
-   fileprivate var idleChannelListArray : [Channel]?
-   fileprivate var activeChannelListArray : [Channel]?
+   fileprivate var idleChannelListArray: [Channel]?
+   fileprivate var activeChannelListArray: [Channel]?
    fileprivate var icFabButton = UIButton()
     
     lazy var collectionView: UICollectionView = {
@@ -24,7 +24,7 @@ class ChannelListCell: BaseCell,UICollectionViewDataSource, UICollectionViewDele
     }()
 
     func fetchChannelList() {
-        ChannelListViewModel.shared.fetchChannelData(completion: { (idleChannelArray : [Channel], activeChannelArray : [Channel]?) in
+        ChannelListViewModel.shared.fetchChannelData(completion: { (idleChannelArray: [Channel], activeChannelArray: [Channel]?) in
             self.idleChannelListArray = idleChannelArray
             self.activeChannelListArray = activeChannelArray
             self.collectionView.reloadData()
@@ -41,8 +41,8 @@ class ChannelListCell: BaseCell,UICollectionViewDataSource, UICollectionViewDele
         addConstraintsWithFormat(format: "H:|[v0]|", views: collectionView)
         addConstraintsWithFormat(format: "V:|[v0]|", views: collectionView)
         
-        collectionView.register(UINib.init(nibName: "ChannelCell", bundle: nil), forCellWithReuseIdentifier:"ChannelCell" )
-        collectionView.register(UINib.init(nibName: "SectionHeaderView", bundle: nil), forSupplementaryViewOfKind:UICollectionElementKindSectionHeader , withReuseIdentifier: "Header")
+        collectionView.register(UINib.init(nibName: "ChannelCell", bundle: nil), forCellWithReuseIdentifier: "ChannelCell" )
+        collectionView.register(UINib.init(nibName: "SectionHeaderView", bundle: nil), forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "Header")
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -50,7 +50,9 @@ class ChannelListCell: BaseCell,UICollectionViewDataSource, UICollectionViewDele
     }
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-       let view = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "Header", for: indexPath) as! SectionHeaderCell
+        guard let view = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "Header", for: indexPath) as? SectionHeaderCell else {
+            return UICollectionReusableView()
+        }
         view.headerNameLabel.text = indexPath.section == 0 ? "Active" : "Idle"
         return view
     }
@@ -67,7 +69,9 @@ class ChannelListCell: BaseCell,UICollectionViewDataSource, UICollectionViewDele
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ChannelCell", for: indexPath) as! ChannelCell
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ChannelCell", for: indexPath) as? ChannelCell else {
+            return UICollectionViewCell()
+        }
         cell.separatorView.isHidden = true
         if indexPath.section == 0 {
             cell.channel = activeChannelListArray?[indexPath.row]
@@ -84,20 +88,18 @@ class ChannelListCell: BaseCell,UICollectionViewDataSource, UICollectionViewDele
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width:frame.width, height: 100)
+        return CGSize(width: frame.width, height: 100)
     }
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         return 0
     }
    
-    
     /// Did Select Method of Cell
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
     }
     
 }
-
 
 extension ChannelListCell {
 

@@ -25,7 +25,7 @@ class ChatMessageCell: UICollectionViewCell {
         super.awakeFromNib()
     }
     
-    public func configure(senderName: String,senderDate: Date,messageKind: MessageKind) {
+    public func configure(senderName: String, senderDate: Date, messageKind: MessageKind) {
         messageSender?.text = senderName
         messageDate?.text = "dec 25 2018"
         messageTime?.text = "04:00"

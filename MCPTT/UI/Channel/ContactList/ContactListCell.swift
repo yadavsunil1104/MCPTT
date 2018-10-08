@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ContactListCell: BaseCell,UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+class ContactListCell: BaseCell, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
     lazy var collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
@@ -19,7 +19,7 @@ class ContactListCell: BaseCell,UICollectionViewDataSource, UICollectionViewDele
         return cv
     }()
     
-    var contactListArray : [String] = ["Contact1","contact2","contact3","contact4","contact5","contact6","contact7","contact8","contact9","contact10"]
+    var contactListArray : [String] = ["Contact1", "contact2","contact3","contact4","contact5","contact6","contact7","contact8","contact9","contact10"]
     
     let ContactListCell = "ChannelMenuCell"
     
@@ -40,7 +40,9 @@ class ContactListCell: BaseCell,UICollectionViewDataSource, UICollectionViewDele
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         ///I have added menu cell only for checking/demo, need to add contact Cell here,
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ContactListCell, for: indexPath) as! MenuCell
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ContactListCell, for: indexPath) as? MenuCell else {
+            return UICollectionViewCell()
+        }
         cell.menuBarLabel.text = contactListArray[indexPath.row]
         return cell
     }

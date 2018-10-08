@@ -15,9 +15,8 @@ private let ContactListCellId = "ContactListCellId"
 final class ChannelViewContoller: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     
     static func makeViewController(collectionViewLayout: UICollectionViewLayout) -> ChannelViewContoller {
-        let storyboard = UIStoryboard(name: "Channel", bundle: nil)
-        let ChannelView = storyboard.instantiateViewController(withIdentifier: "ChannelViewContoller") as! ChannelViewContoller
-        return ChannelView
+        let channelView = ChannelViewContoller.instantiateFromStoryboard("Channel", storyboardId: "ChannelViewContoller")
+        return channelView
     }
 
     override func viewDidLoad() {
@@ -64,7 +63,6 @@ final class ChannelViewContoller: UICollectionViewController, UICollectionViewDe
 
     }
 
-
 /// Collection's Delegate/DataSource Methods
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 2
@@ -72,12 +70,16 @@ final class ChannelViewContoller: UICollectionViewController, UICollectionViewDe
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if indexPath.row == 0 {
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ChannelListCellId, for: indexPath) as! ChannelListCell
+            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ChannelListCellId, for: indexPath) as?  ChannelListCell else {
+                return UICollectionViewCell()
+            }
              return cell
 
         } else {
 
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ContactListCellId, for: indexPath) as! ContactListCell
+            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ContactListCellId, for: indexPath) as? ContactListCell else {
+                return UICollectionViewCell()
+            }
             return cell
         }
     }
@@ -101,7 +103,7 @@ extension ChannelViewContoller {
     /// Create a custom navigation button for "Settings"
     func setupNavBarButtons() {
         let settingImage = UIImage(named: "nav_more_icon")?.withRenderingMode(.alwaysTemplate)
-        let settingButton = UIBarButtonItem(image:settingImage , style: .plain, target: self, action: #selector(handleSettings))
+        let settingButton = UIBarButtonItem(image: settingImage, style: .plain, target: self, action: #selector(handleSettings))
         settingButton.tintColor = UIColor.black
         
         navigationItem.rightBarButtonItems = [settingButton]
@@ -145,7 +147,7 @@ extension ChannelViewContoller {
         print("Create Channel Button Pressed")
     }
     
-    private func setupScrollToTopButton(){
+    private func setupScrollToTopButton() {
         let scrollToTopButton = UIButton.init(frame: CGRect(x: self.view.frame.width/2, y: self.view.frame.height-30-10, width: 30, height: 30))
         scrollToTopButton.setTitle("^", for: .normal)
         scrollToTopButton.backgroundColor = UIColor.darkGray

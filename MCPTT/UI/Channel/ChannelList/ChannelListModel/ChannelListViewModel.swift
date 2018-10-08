@@ -25,8 +25,7 @@ class ChannelListViewModel {
     private init() {}
     static let shared = ChannelListViewModel()
 
-
-    func fetchChannelData (completion: @escaping ([Channel],[Channel]) -> ()) {
+    func fetchChannelData (completion: @escaping ([Channel], [Channel]) -> ()) {
 
             if let path = Bundle.main.path(forResource: "channelListDemoData", ofType: "json") {
             do {
@@ -38,9 +37,7 @@ class ChannelListViewModel {
                 let jsonResult = try JSONSerialization.jsonObject(with: data,
                                                                   options: JSONSerialization.ReadingOptions.mutableLeaves) as? Dictionary<String, AnyObject>
 
-
                 let channels = jsonResult?["channels"] as? [[String: String]]
-
                 for channel in channels ?? [[:]] {
 
                     let channel = Channel(channelID: channel["channel_id"],
@@ -62,7 +59,7 @@ class ChannelListViewModel {
                 }
 
                 DispatchQueue.main.async {
-                    completion(idlechannelsData,activechannelsData)
+                    completion(idlechannelsData, activechannelsData)
                 }
             } catch {
             }

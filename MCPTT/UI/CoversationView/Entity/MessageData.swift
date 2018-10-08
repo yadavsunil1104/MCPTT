@@ -11,7 +11,8 @@ import Foundation
 class MessageData {
     static let shared = MessageData()
     
-    private init(){}
+    private init() {}
+   
     var now = Date()
     let audioMessage = [""]
     let messageTextValues = [
@@ -64,7 +65,7 @@ class MessageData {
 //           // now = date
             return now
         } else {
-            let randomMinute = Int(arc4random_uniform(UInt32(59)))
+            //let randomMinute = Int(arc4random_uniform(UInt32(59)))
 //            let date = Calendar.current.date(byAdding: .minute, value: randomMinute, to: now)
 //            now = date
             return now

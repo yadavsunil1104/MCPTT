@@ -22,7 +22,7 @@ class ContactListViewController: UICollectionViewController {
     
     var groups = [
         "group 1": ["Name 1", "Name2", "Name3"],
-        "group 2":["Name 4", "Name5", "Name6"]
+        "group 2": ["Name 4", "Name5", "Name6"]
     ]
     
     var groupNames = ["group1", "group2"]
@@ -77,7 +77,6 @@ class ContactListViewController: UICollectionViewController {
         //self.collectionView!.register(CurrUserGroupsCell.self, forCellWithReuseIdentifier: currUserGroupsCellId)
         //self.collectionView!.register(CurrUserContactsCell.self, forCellWithReuseIdentifier: currUserContactsCellId)
         
-        
         // Do any additional setup after loading the view.
         
         let cellSize = CGSize(width: view.frame.width, height: 100)
@@ -115,7 +114,6 @@ class ContactListViewController: UICollectionViewController {
         return 3
     }
 
-
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
         switch (section) {
@@ -128,52 +126,52 @@ class ContactListViewController: UICollectionViewController {
             }
     }
     
-    
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
-        
         switch (indexPath.section) {
             case 0:
-                let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "currUserCell", for: indexPath) as! CurrUserCell
-                
-                    cell.currUserName.text = currUserName
-                    cell.currUserMCID.text = currMCID
-                
+                guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "currUserCell", for: indexPath) as? CurrUserCell else {
+                    return UICollectionViewCell()
+                }
+                cell.currUserName.text = currUserName
+                cell.currUserMCID.text = currMCID
                 return cell
             case 1:
-                let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "currUserGroupsCell", for: indexPath) as! CurrUserGroupsCell
-                
+                guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "currUserGroupsCell", for: indexPath) as? CurrUserGroupsCell else {
+                    return UICollectionViewCell()
+                }
                     cell.currUserGroupName.text = groupNames[indexPath.row]
-                
+
                 return cell
             default:
-                let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "currUserContactsCell", for: indexPath) as! CurrUserContactsCell
+                guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "currUserContactsCell", for: indexPath) as? CurrUserContactsCell else {
+                    return UICollectionViewCell()
+                }
                     cell.currUserContactName.text = names[indexPath.row]
                     cell.currUserContactMCID.text = MCIDs[indexPath.row]
-        
+
                 return cell
             }
     }
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-        switch (indexPath.section) {
-        case 0:
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "currUserCell", for: indexPath) as! CurrUserCell
-            
-            performSegue(withIdentifier: "contactDetailSegueId", sender: cell)
-            
-        case 1:
-            break
-            //let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "currUserGroupsCell", for: indexPath) as! CurrUserGroupsCell
-            //Group View Controller
-            
-        default:
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "currUserContactsCell", for: indexPath) as! CurrUserContactsCell
-            
-            performSegue(withIdentifier: "contactDetailSegueId", sender: cell)
-            
-        }
+//        switch (indexPath.section) {
+//        case 0:
+//            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "currUserCell", for: indexPath) as! CurrUserCell
+//
+//            performSegue(withIdentifier: "contactDetailSegueId", sender: cell)
+//
+//        case 1:
+//            break
+//            //let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "currUserGroupsCell", for: indexPath) as! CurrUserGroupsCell
+//            //Group View Controller
+//
+//        default:
+//            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "currUserContactsCell", for: indexPath) as! CurrUserContactsCell
+//
+//            performSegue(withIdentifier: "contactDetailSegueId", sender: cell)
+//
+//        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -199,9 +197,6 @@ class ContactListViewController: UICollectionViewController {
         }
     }
     
-    
-    
-    
 //    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
 //        return CGSize(width: view.frame.width, height: 100)
 //    }
@@ -210,7 +205,6 @@ class ContactListViewController: UICollectionViewController {
 //        return 0
 //    }
     
-
     // MARK: UICollectionViewDelegate
 
     /*

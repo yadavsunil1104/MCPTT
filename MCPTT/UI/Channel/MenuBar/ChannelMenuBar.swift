@@ -12,7 +12,7 @@ class  ChannelMenuBar: UIView, UICollectionViewDelegate, UICollectionViewDataSou
     
     var channelViewContoller: ChannelViewContoller?
     var horizontalBarLeftAnchorConstraint: NSLayoutConstraint?
-    var separatorBarLeftAnchorConstraint : NSLayoutConstraint?
+    var separatorBarLeftAnchorConstraint: NSLayoutConstraint?
     let reuseIdentifier = "ChannelMenuCell"
     
     lazy var collectionView: UICollectionView = {
@@ -75,9 +75,11 @@ class  ChannelMenuBar: UIView, UICollectionViewDelegate, UICollectionViewDataSou
     }
     
    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-       let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! MenuCell
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as? MenuCell else {
+            return UICollectionViewCell()
+        }
         cell.menuBarLabel.text = indexPath.row == 0 ? "CHANNELS"  : "CONTACTS"
-       return cell
+        return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

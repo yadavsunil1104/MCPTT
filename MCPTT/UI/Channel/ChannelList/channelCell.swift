@@ -78,7 +78,6 @@ class ChannelCell: BaseCell {
         }
     }
 
-    
     override func awakeFromNib() {
         super.awakeFromNib()
     }
