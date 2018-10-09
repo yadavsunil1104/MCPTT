@@ -26,8 +26,15 @@ class ChatMessageCell: UICollectionViewCell {
     }
     
     public func configure(senderName: String, senderDate: Date, messageKind: MessageKind) {
-        messageSender?.text = senderName
-        messageDate?.text = "dec 25 2018"
-        messageTime?.text = "04:00"
+        
+//        if senderName.elementsEqual(MessageData.shared.currentSender.displayName) {
+//    //sent user
+//        } else {
+            messageSender?.text = senderName
+            messageDate?.text = "dec 25 2018"
+            LeftSideTimeWidthConst.constant = 0
+            messageTime?.text = "04:00"
+            _ = MessageKind.text
+  //      }
     }
 }

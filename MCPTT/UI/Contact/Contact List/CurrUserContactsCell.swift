@@ -9,8 +9,9 @@
 import Foundation
 import  UIKit
 
-class CurrUserContactsCell: UICollectionViewCell {
-    
+//class CurrUserContactsCell : UICollectionViewCell {
+class CurrUserContactsCell : BaseCell {
+
     @IBOutlet weak var currUserContactName: UILabel!
     @IBOutlet weak var currUserContactMCID: UILabel!
 }

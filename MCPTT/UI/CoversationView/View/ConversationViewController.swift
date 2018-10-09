@@ -9,14 +9,31 @@
 import Foundation
 import UIKit
 
-class ConversationViewController: UIViewController {
+class ConversationViewController: UIViewController, UITextViewDelegate {
     
     @IBOutlet weak var messageView: UIView!
+    @IBOutlet weak var pttToggleBtn: UIButton!
+    
+    @IBOutlet weak var messageText: UITextField!
     @IBOutlet weak var ChatCollectionView: UICollectionView!
+    @IBOutlet weak var ChatCollectionViewHeightConst: NSLayoutConstraint!
+    @IBOutlet weak var messageViewHightConst: NSLayoutConstraint!
+    
+    var isPTTEnabled: Bool = true
     let refreshControl = UIRefreshControl()
     var presenter: CVViewToCVPresenter?
     var tableView: UITableView?
     var messageList: [MesssageDetails] = []
+    
+    @IBAction func togglePTTAndKeyboard(_ sender: Any) {
+        if isPTTEnabled {
+            self.messageText.becomeFirstResponder()
+            self.pttToggleBtn.setImage(UIImage(named: "keyboard"), for: .normal)
+        } else {
+            self.pttToggleBtn.setImage(UIImage(named: "ptt_launcher_icon"), for: .normal)
+            self.messageText.resignFirstResponder()
+        }
+    }
     
     lazy var formatter: DateFormatter = {
         let formatter = DateFormatter()
@@ -25,6 +42,15 @@ class ConversationViewController: UIViewController {
     }()
     
     override func viewDidLoad() {
+        let moreImage   = UIImage(named: "nav_more_icon")
+        let callImage = UIImage(named: "call_icon")
+        
+        let moreButton   = UIBarButtonItem(image: moreImage, style: .plain, target: self, action: #selector(switchToUserList))
+        let callButton = UIBarButtonItem(image: callImage, style: .plain, target: self, action: #selector(activatePTT))
+        self.navigationItem.rightBarButtonItems = [moreButton]
+        self.navigationItem.hidesBackButton = false
+        self.navigationItem.title = "Private chat"
+        
         presenter?.fetchChannelHistory()
         ChatCollectionView.delegate = self
         ChatCollectionView.dataSource = self
@@ -39,7 +65,6 @@ class ConversationViewController: UIViewController {
         let nib = UINib(nibName: "ChatMessageCell", bundle: nil)
         ChatCollectionView.register(nib, forCellWithReuseIdentifier: "ChatMessageCell")
         DispatchQueue.global(qos: .userInitiated).async {
-            //todo
             MessageData.shared.getMessages(count: 10) { messages in
                 DispatchQueue.main.async {
                     self.messageList = messages
@@ -47,9 +72,22 @@ class ConversationViewController: UIViewController {
                 }
             }
         }
+        NotificationCenter.default.addObserver(self, selector: #selector(ConversationViewController.keyboardWillShow(notification:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(ConversationViewController.keyboardWillHide(notification:)), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
     }
     
-    @IBAction func moreOptionTap(_ sender: Any) {
+    @objc func keyboardWillShow(notification: NSNotification) {
+        if (isPTTEnabled) {
+            isPTTEnabled = !isPTTEnabled
+            self.ChatCollectionViewHeightConst.constant -= self.messageViewHightConst.constant
+        }
+    }
+    @objc func keyboardWillHide(notification: NSNotification) {
+        isPTTEnabled = !isPTTEnabled
+            self.ChatCollectionViewHeightConst.constant += self.messageViewHightConst.constant
+    }
+    
+    @objc func switchToUserList() {
         let channelStoryboard = UIStoryboard.init(name: "Channel", bundle: nil)
         guard let memberDetailVc = channelStoryboard.instantiateViewController(withIdentifier: "ChannelMemberListViewController") as? ChannelMemberListViewController else {
             return
@@ -57,6 +95,9 @@ class ConversationViewController: UIViewController {
         self.navigationController?.pushViewController(memberDetailVc, animated: true)
     }
     
+    @objc func activatePTT() {
+        //todo hemanth
+    }
 }
 extension ConversationViewController: UICollectionViewDataSource, UICollectionViewDelegate {
 

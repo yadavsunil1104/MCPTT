@@ -22,7 +22,7 @@ final class SettingsViewModel {
        defaultSettings.append(SettingsCellViewModel.init(title: "Message auto delete", subTitle: nil))
     
        messageSettings.append(SettingsCellViewModel.init(title: "Alert Tone", subTitle: nil))
-       messageSettings.append(SettingsCellViewModel.init(title: "Viberation", subTitle: nil))
+       messageSettings.append(SettingsCellViewModel.init(title: "Vibration", subTitle: nil))
         
     }
 }

@@ -6,10 +6,12 @@
 //  Copyright © 2018 Raju Maramulla. All rights reserved.
 //
 
-import UIKit
+import Foundation
+import  UIKit
 
-class CurrUserCell: UICollectionViewCell {
-    
+//class CurrUserCell : UICollectionViewCell {
+class CurrUserCell : BaseCell {
+
     @IBOutlet weak var currUserName: UILabel!
     @IBOutlet weak var currUserMCID: UILabel!
     

@@ -30,7 +30,7 @@ final class ChannelViewContoller: UICollectionViewController, UICollectionViewDe
         collectionView?.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
         
         collectionView?.backgroundColor = UIColor.white
-        setupChannelMenuBar()
+        //setupChannelMenuBar()
         setupNavBarButtons()
         setupCollectionView()
         setupICFabButtons()
@@ -77,10 +77,10 @@ final class ChannelViewContoller: UICollectionViewController, UICollectionViewDe
 
         } else {
 
-            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ContactListCellId, for: indexPath) as? ContactListCell else {
-                return UICollectionViewCell()
-            }
-            return cell
+//            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ContactListCellId, for: indexPath) as? ContactListCell else {
+//                return UICollectionViewCell()
+//            }
+             return UICollectionViewCell()
         }
     }
 
@@ -118,7 +118,7 @@ extension ChannelViewContoller {
 
         collectionView?.backgroundColor = UIColor.white
         collectionView?.register(ChannelListCell.self, forCellWithReuseIdentifier: ChannelListCellId)
-        collectionView?.register(ContactListCell.self, forCellWithReuseIdentifier: ContactListCellId)
+        //collectionView?.register(ContactListCell.self, forCellWithReuseIdentifier: ContactListCellId)
 
         collectionView?.contentInset = UIEdgeInsetsMake(50, 0, 0, 0)
         collectionView?.scrollIndicatorInsets = UIEdgeInsetsMake(50, 0, 0, 0)

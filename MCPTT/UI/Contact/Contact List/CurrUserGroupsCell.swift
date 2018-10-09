@@ -9,7 +9,8 @@
 import Foundation
 import  UIKit
 
-class CurrUserGroupsCell: UICollectionViewCell {
-    
+//class CurrUserGroupsCell : UICollectionViewCell {
+class CurrUserGroupsCell : BaseCell {
+
     @IBOutlet weak var currUserGroupName: UILabel!
 }

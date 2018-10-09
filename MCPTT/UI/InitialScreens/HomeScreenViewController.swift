@@ -30,7 +30,7 @@ final class HomeScreenViewController: UIViewController {
         if CommonUtility.isAlreadyLunched() {
             if CommonUtility.isAlreadyLoggedIn() {
                 let layout = UICollectionViewFlowLayout()
-                let vc = ChannelViewContoller.makeViewController(collectionViewLayout: layout)
+                let vc = LandingViewController.makeViewController(collectionViewLayout: layout)
                 navigationController?.pushViewController(vc, animated: true)
             } else {
                 let loginViewContoller = LoginViewContoller.instantiateFromStoryboard("Login", storyboardId: "LoginViewContoller")

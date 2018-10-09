@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Landing View Controller-->
+        <scene sceneID="HSn-Xa-Gqj">
+            <objects>
+                <viewController storyboardIdentifier="LandingViewController" id="Pd3-yE-v1R" customClass="LandingViewController" customModule="mcpttapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="z5F-h8-o3T">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Y0-pe-Ahi" customClass="ScrollPager" customModule="mcpttapp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="64" width="375" height="70"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="42d-xB-HCS"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedTextColor">
+                                        <color key="value" red="0.0" green="0.69019607839999997" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="indicatorColor">
+                                        <color key="value" red="0.0" green="0.69019607839999997" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="scrollView" destination="fBa-7w-rAc" id="EEV-BH-yjz"/>
+                                </connections>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fBa-7w-rAc">
+                                <rect key="frame" x="0.0" y="134" width="375" height="533"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fBa-7w-rAc" firstAttribute="leading" secondItem="9FB-mb-uTt" secondAttribute="leading" id="B9j-0W-jN8"/>
+                            <constraint firstItem="6Y0-pe-Ahi" firstAttribute="top" secondItem="z5F-h8-o3T" secondAttribute="top" constant="64" id="hyR-97-lbr"/>
+                            <constraint firstItem="fBa-7w-rAc" firstAttribute="bottom" secondItem="9FB-mb-uTt" secondAttribute="bottom" id="i9y-fJ-L4m"/>
+                            <constraint firstItem="fBa-7w-rAc" firstAttribute="top" secondItem="6Y0-pe-Ahi" secondAttribute="bottom" id="lme-6Z-hga"/>
+                            <constraint firstItem="6Y0-pe-Ahi" firstAttribute="leading" secondItem="9FB-mb-uTt" secondAttribute="leading" id="nGY-F0-9t1"/>
+                            <constraint firstItem="fBa-7w-rAc" firstAttribute="trailing" secondItem="9FB-mb-uTt" secondAttribute="trailing" id="vYX-QF-4DB"/>
+                            <constraint firstItem="6Y0-pe-Ahi" firstAttribute="trailing" secondItem="9FB-mb-uTt" secondAttribute="trailing" id="wAv-7a-WvQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9FB-mb-uTt"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="3Nr-Bt-37e"/>
+                    <connections>
+                        <outlet property="scrollPager" destination="6Y0-pe-Ahi" id="TWC-NR-cye"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OpR-HS-N1f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1314.4000000000001" y="-167.76611694152925"/>
+        </scene>
+    </scenes>
+</document>

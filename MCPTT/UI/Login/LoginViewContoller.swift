@@ -35,7 +35,7 @@ private extension LoginViewContoller {
     @IBAction func continueButtonPressed() {
         CommonUtility.userLoggedIn(value: true)
         let layout = UICollectionViewFlowLayout()
-        let vc = ChannelViewContoller.makeViewController(collectionViewLayout: layout)
+        let vc = LandingViewController.makeViewController(collectionViewLayout: layout)
         navigationController?.pushViewController(vc, animated: true)
     }
 }

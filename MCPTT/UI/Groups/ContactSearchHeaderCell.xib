@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ContactSearchCell" id="F0N-Vc-iYE" customClass="ContactHeaderCell" customModule="mcpttapp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hYR-8U-efH">
+                    <rect key="frame" x="16" y="0.0" width="61" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3GT-6z-a9m">
+                    <rect key="frame" x="79" y="15" width="296" height="1"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstItem="hYR-8U-efH" firstAttribute="top" secondItem="FwP-GI-tE8" secondAttribute="top" id="2Cu-Y7-PJj"/>
+                <constraint firstItem="hYR-8U-efH" firstAttribute="leading" secondItem="FwP-GI-tE8" secondAttribute="leading" constant="16" id="HxA-Ek-k0a"/>
+                <constraint firstItem="hYR-8U-efH" firstAttribute="bottom" secondItem="FwP-GI-tE8" secondAttribute="bottom" id="SSZ-Ib-RA8"/>
+                <constraint firstItem="3GT-6z-a9m" firstAttribute="centerY" secondItem="hYR-8U-efH" secondAttribute="centerY" id="WkH-qU-7Gz"/>
+                <constraint firstItem="hYR-8U-efH" firstAttribute="bottom" secondItem="FwP-GI-tE8" secondAttribute="bottom" id="fCO-SJ-w67"/>
+                <constraint firstItem="3GT-6z-a9m" firstAttribute="leading" secondItem="F0N-Vc-iYE" secondAttribute="leading" constant="79" id="fYd-it-Ote"/>
+                <constraint firstItem="hYR-8U-efH" firstAttribute="top" secondItem="FwP-GI-tE8" secondAttribute="top" id="gBn-qo-wfp"/>
+                <constraint firstItem="3GT-6z-a9m" firstAttribute="top" secondItem="FwP-GI-tE8" secondAttribute="top" constant="15" id="hGG-eK-WHc"/>
+                <constraint firstAttribute="trailing" secondItem="3GT-6z-a9m" secondAttribute="trailing" id="lI8-vt-iOO"/>
+                <constraint firstItem="hYR-8U-efH" firstAttribute="leading" secondItem="FwP-GI-tE8" secondAttribute="leading" constant="16" id="vPq-yF-w2P"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="FwP-GI-tE8"/>
+            <point key="canvasLocation" x="400.5" y="7"/>
+        </collectionReusableView>
+    </objects>
+</document>
